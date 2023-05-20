@@ -5,18 +5,17 @@ import Footer from '../components/Footer'
 
 const content = (
   <div className='container' style={{backgroundColor: 'green'}}>
-   
+    texto ue Sidebar que barbaro
   </div>)
-
-const Home = () => {
+    
+const Algerosas = () => {
   return (
     <>
     <Navbar /> 
-    <Sidebar />
-      {content}
+    {content}
     <Footer />
     </>
   )
 }
 
-export default Home
+export default Algerosas

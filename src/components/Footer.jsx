@@ -28,7 +28,7 @@ const SocialIcon = styled.div`
 const Footer = () => {
   const content = (<>
     <footer className="text-center text-lg-start text-muted" style={{backgroundColor:'#221F20'}}>
-    <section className="d-flex justify-content-center justify-content-lg-between p-2" style={{backgroundColor:'white', marginBottom:'0px'}}>
+      <section className="d-flex justify-content-center justify-content-lg-between p-2" style={{backgroundColor:'white', marginBottom:'0px'}}>
         <div className="me-5 d-none d-lg-block" style={{color:'black'}}>
           <center>
           <span style={{marginLeft: '200px'}}>Nós também estamos nas redes sociais, siga-nos:</span>
@@ -38,60 +38,58 @@ const Footer = () => {
 
         
         <div style={{color:'black'}}>
-        
-            <a href="https://www.tiktok.com/@calhasnobrres?_t=8cQy9VXUeer&_r=1" className="me-4 text-reset">
-              <i>
-                <SocialIcon>
-                  <img 
-                    src='https://cdn4.iconfinder.com/data/icons/social-media-flat-7/64/Social-media_Tiktok-512.png'
-                    alt='tiktok'
-                    style={{
-                      width: '40px', 
-                      height: '40px',
-                      borderRadius: '10px'
-                    }}
-                  />
-                </SocialIcon>
-              </i>                        
-            </a>
-     
-            <a href="https://www.instagram.com/calhasnobrres/?igshid=MmJiY2I4NDBkZg%3D%3D" className="me-4 text-reset">
-              <i>
-                <SocialIcon>
-                  <img 
-                    src='https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/instagram-icone-icon-1.png?alt=media&token=93ae4251-5ea2-4cf0-9987-52f1dc571b9c'
-                    alt='instagram'
-                    style={{
-                      width: '40px', 
-                      height: '40px',
-                      borderRadius: '10px'
-                    }}
-                  />
-                </SocialIcon>
-              </i>        
-            </a>
-            <a href="https://api.whatsapp.com/message/P47VSLNIJS2YG1?autoload=1&app_absent=0" className="me-4 text-reset">
-              <i>
-                <SocialIcon>
-                  <img 
-                    src='https://cdn-icons-png.flaticon.com/512/733/733585.png'
-                    alt='whatsapp'
-                    style={{
-                      width: '40px', 
-                      height: '40px',
-                      borderRadius: '10px'
-                    }}
-                  />
-                </SocialIcon>
-              </i>        
-            </a>
-          
+      
+          <a href="https://www.tiktok.com/@calhasnobrres?_t=8cQy9VXUeer&_r=1" className="me-4 text-reset">
+            <i>
+              <SocialIcon>
+                <img 
+                  src='https://cdn4.iconfinder.com/data/icons/social-media-flat-7/64/Social-media_Tiktok-512.png'
+                  alt='tiktok'
+                  style={{
+                    width: '30px', 
+                    height: '30px',
+                    borderRadius: '10px'
+                  }}
+                />
+              </SocialIcon>
+            </i>                        
+          </a>
+   
+          <a href="https://www.instagram.com/calhasnobrres/?igshid=MmJiY2I4NDBkZg%3D%3D" className="me-4 text-reset">
+            <i>
+              <SocialIcon>
+                <img 
+                  src='https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/instagram-icone-icon-1.png?alt=media&token=93ae4251-5ea2-4cf0-9987-52f1dc571b9c'
+                  alt='instagram'
+                  style={{
+                    width: '30px', 
+                    height: '30px',
+                    borderRadius: '10px'
+                  }}
+                />
+              </SocialIcon>
+            </i>        
+          </a>
+          <a href="https://api.whatsapp.com/message/P47VSLNIJS2YG1?autoload=1&app_absent=0" className="me-4 text-reset">
+            <i>
+              <SocialIcon>
+                <img 
+                  src='https://cdn-icons-png.flaticon.com/512/733/733585.png'
+                  alt='whatsapp'
+                  style={{
+                    width: '30px', 
+                    height: '30px',
+                    borderRadius: '10px'
+                  }}
+                />
+              </SocialIcon>
+            </i>        
+          </a>
         </div>
-
-    </section>
+      </section>
 
     <section className="" style={{backgroundColor:'#221F20', color: 'white', marginTop:'0px'}}>
-        <div className="container text-center text-md-start mt-5" >
+      <div className="container text-center text-md-start mt-5" >
 
         <div className="row mt-3" >
             
@@ -148,7 +146,7 @@ const Footer = () => {
             
             
             <h6 className="text-uppercase fw-bold mb-4">
-                Telefones <img src="https://play-lh.googleusercontent.com/k0eDx1Rn_lzYsGUlcD98DNQXGiT1wtltPDmB3EChA7rwdew__zZXFbau1Qz9hyIqy45U"
+                Telefones <img src="https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/unnamed.png?alt=media&token=236f7141-9c87-491a-8647-a37955210a76"
                             style={{
                               width: '20px',
                               height: '20px',

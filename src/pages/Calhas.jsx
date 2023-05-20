@@ -5,18 +5,18 @@ import Footer from '../components/Footer'
 
 const content = (
   <div className='container' style={{backgroundColor: 'green'}}>
-   
+    
   </div>)
-
-const Home = () => {
+  
+const Calhas = () => {
   return (
-    <>
+  <>
     <Navbar /> 
     <Sidebar />
       {content}
     <Footer />
-    </>
+  </>
   )
 }
 
-export default Home
+export default Calhas

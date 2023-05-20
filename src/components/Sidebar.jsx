@@ -1,7 +1,12 @@
 import React from 'react'
 import "./styles/sidebar.css"
 import { 
-    Roofing
+  Home,
+  Rocket,
+  AirlineSeatLegroomNormal,
+  DoorFront,
+  Layers,
+  Cottage
 } from '@mui/icons-material'
 
 const Sidebar = () => {
@@ -13,16 +18,51 @@ const Sidebar = () => {
           <li>
             <a href="/home">  
               <i aria-hidden="true">
-                <Roofing className='sidebarIcon' /> 
+                <Home className='sidebarIcon' /> 
               </i>  
-              <span style={{marginLeft:'10px', marginTop:'20px'}}>Página Inicial</span>  </a>
+              <span style={{marginLeft:'10px', marginTop:'20px'}}>Página inicial</span>  </a>
+          </li>
+           <li>
+            <a href="/home">  
+              <i aria-hidden="true">
+                <Rocket className='sidebarIcon' /> 
+              </i>  
+              <span style={{marginLeft:'10px', marginTop:'20px'}}>Últimas visitas</span>  </a>
+          </li>
+          <li>
+            <a href="/home">  
+              <i aria-hidden="true">
+                <AirlineSeatLegroomNormal className='sidebarIcon' /> 
+              </i>  
+              <span style={{marginLeft:'10px', marginTop:'20px'}}>Calhas</span>  </a>
+          </li>
+           <li>
+            <a href="/home">  
+              <i aria-hidden="true">
+                <DoorFront className='sidebarIcon' /> 
+              </i>  
+              <span style={{marginLeft:'10px', marginTop:'20px'}}>Coifas</span>  </a>
+          </li>
+          <li>
+            <a href="/home">  
+              <i aria-hidden="true">
+                <Layers className='sidebarIcon' /> 
+              </i>  
+              <span style={{marginLeft:'10px', marginTop:'20px'}}>Colarinho</span>  </a>
+          </li>
+           <li>
+            <a href="/home">  
+              <i aria-hidden="true">
+                <Cottage className='sidebarIcon' /> 
+              </i>  
+              <span style={{marginLeft:'10px', marginTop:'20px'}}>Chaminés</span>  </a>
           </li>
         </ul>
       </div>
     </div>
     </>
     )
-    return content
+  return content
 }
 
 export default Sidebar

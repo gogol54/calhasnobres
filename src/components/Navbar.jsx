@@ -28,7 +28,7 @@ const Navbar = () => {
     <Box>
        <Container>
         <nav className="navbar navbar-expand-lg navbar-light bg-light" style={{borderRadius: '10px'}}>
-          <a className="navbar-brand" href="#">Calhas Nobres</a>
+          <a className="navbar-brand" href="/">Calhas Nobres</a>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -36,28 +36,28 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item active">
-                <a className="nav-link" href="#">Página Inicial <span className="sr-only">(current)</span></a>
+                <a className="nav-link" href="/">Página Inicial <span className="sr-only">(current)</span></a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Quem somos</a>
+                <a className="nav-link" href="/information">Quem somos</a>
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Serviços
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a className="dropdown-item" href="#">Calhas</a>
-                  <a className="dropdown-item" href="#">Algerosas</a>
-                  <a className="dropdown-item" href="#">Coifas</a>
-                  <a className="dropdown-item" href="#">Colarinho</a>
-                  <a className="dropdown-item" href="#">Chaminés</a>
+                  <a className="dropdown-item" href="/calhas">Calhas</a>
+                  <a className="dropdown-item" href="/algerosas">Algerosas</a>
+                  <a className="dropdown-item" href="/coifas">Coifas</a>
+                  <a className="dropdown-item" href="/colarinho">Colarinho</a>
+                  <a className="dropdown-item" href="/chamines">Chaminés</a>
                   <div className="dropdown-divider"></div>
-                  <a className="dropdown-item" href="#">Troca de cobertura</a>
-                  <a className="dropdown-item" href="#">Manutenção de telhados</a>
+                  <a className="dropdown-item" href="/coberturas">Troca de cobertura</a>
+                  <a className="dropdown-item" href="/manutencao">Manutenção de telhados</a>
                 </div>
               </li>
               <li className="nav-item">
-                <a className="nav-link " href="#">Saiba Mais</a>
+                <a className="nav-link " href="/others">Saiba Mais</a>
               </li>
             </ul>
             
