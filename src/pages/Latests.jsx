@@ -8,15 +8,14 @@ const content = (
     texto ue Sidebar que barbaro
   </div>)
     
-const Algerosas = () => {
+const Latests = () => {
   return (
     <>
     <Navbar /> 
-    <Sidebar />
     {content}
     <Footer />
     </>
   )
 }
 
-export default Algerosas
+export default Latests

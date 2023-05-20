@@ -16,47 +16,49 @@ const Sidebar = () => {
       <div id="sidebar-wrapper">
         <ul className="sidebar-nav">
           <li>
-            <a href="/home">  
+            <a href="/">  
               <i aria-hidden="true">
                 <Home className='sidebarIcon' /> 
               </i>  
               <span style={{marginLeft:'10px', marginTop:'20px'}}>Página inicial</span>  </a>
           </li>
-           <li>
-            <a href="/home">  
-              <i aria-hidden="true">
-                <Rocket className='sidebarIcon' /> 
-              </i>  
-              <span style={{marginLeft:'10px', marginTop:'20px'}}>Últimas visitas</span>  </a>
-          </li>
+         
           <li>
-            <a href="/home">  
+            <a href="/calhas">  
               <i aria-hidden="true">
                 <AirlineSeatLegroomNormal className='sidebarIcon' /> 
               </i>  
               <span style={{marginLeft:'10px', marginTop:'20px'}}>Calhas</span>  </a>
           </li>
+          <li>
+            <a href="/algerosas">  
+              <i aria-hidden="true">
+                <Rocket className='sidebarIcon' /> 
+              </i>  
+              <span style={{marginLeft:'10px', marginTop:'20px'}}>Algerosas</span>  </a>
+          </li>
            <li>
-            <a href="/home">  
+            <a href="/coifas">  
               <i aria-hidden="true">
                 <DoorFront className='sidebarIcon' /> 
               </i>  
               <span style={{marginLeft:'10px', marginTop:'20px'}}>Coifas</span>  </a>
           </li>
           <li>
-            <a href="/home">  
+            <a href="/colarinho">  
               <i aria-hidden="true">
                 <Layers className='sidebarIcon' /> 
               </i>  
               <span style={{marginLeft:'10px', marginTop:'20px'}}>Colarinho</span>  </a>
           </li>
            <li>
-            <a href="/home">  
+            <a href="/chamines">  
               <i aria-hidden="true">
                 <Cottage className='sidebarIcon' /> 
               </i>  
               <span style={{marginLeft:'10px', marginTop:'20px'}}>Chaminés</span>  </a>
           </li>
+          
         </ul>
       </div>
     </div>
