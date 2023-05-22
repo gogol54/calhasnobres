@@ -44,7 +44,7 @@ const Home = () => {
             </div>
           </a>
         </ChatBot>
-      </div>)
+      </div>
     <Footer />
     </>
   )

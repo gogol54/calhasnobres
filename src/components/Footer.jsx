@@ -24,7 +24,18 @@ const SocialIcon = styled.div`
   margin-right: 20px;
   padding: 5px;
 `
+const Logo = styled.img`
+    margin-left: 35px;
+    width: 200px;
+    margin-right: 10px;
+    color: gray;
+    @media (max-width: 920px) and (min-width: 550px) {
+        margin: 0px;
+        width: 0px;
+        height: 0px;
+    }
 
+`
 const Footer = () => {
   const content = (<>
     <footer className="text-center text-lg-start text-muted" style={{backgroundColor:'#221F20'}}>
@@ -97,14 +108,7 @@ const Footer = () => {
     
             <h6 className="text-uppercase fw-bold mb-4">
                 <i className="fas fa-gem me-3">
-                  <img src="https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/calhasCard.jpg?alt=media&token=22b20c0b-4172-4c7b-854a-be30cb84e3bd"
-                    style={{
-                      marginLeft: '35px',
-                      width: '200px',
-                      height: '150px',
-                      marginRight:"10px", 
-                      color:"gray"
-                    }}
+                  <Logo src="https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/calhasCard.jpg?alt=media&token=22b20c0b-4172-4c7b-854a-be30cb84e3bd"
                   />
                 </i>
             </h6>
@@ -125,16 +129,17 @@ const Footer = () => {
             
             <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
             
-              <h6 className="text-uppercase fw-bold mb-4">
-                  Email <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png"
-                          style={{
+                <h6 className="text-uppercase fw-bold mb-4">
+                  Email
+                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png"
+                        style={{
                             width: '20px',
                             height: '15px',
                             marginRight:"10px", 
                             color:"gray"
-                          }}
-                        />
-              </h6>
+                        }}
+                    />
+                </h6>
               <p>
                   <a href="#!" className="text-reset">calhasnobrescco@gmail.com</a>
               </p>
@@ -146,15 +151,16 @@ const Footer = () => {
             
             
             <h6 className="text-uppercase fw-bold mb-4">
-                Telefones <img src="https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/unnamed.png?alt=media&token=236f7141-9c87-491a-8647-a37955210a76"
-                            style={{
-                              width: '20px',
-                              height: '20px',
-                              marginRight:"10px", 
-                              color:"gray"
-                            }}
-                          
-                          />
+                Telefones
+                 <img src="https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/unnamed.png?alt=media&token=236f7141-9c87-491a-8647-a37955210a76"
+                    style={{
+                        width: '20px',
+                        height: '20px',
+                        marginRight:"10px", 
+                        color:"gray"
+                    }}
+                        
+                />
             </h6>
             <p><ContactItem>(49) 9971-9408 | (49) 8846-8707 </ContactItem></p>
             </div>
