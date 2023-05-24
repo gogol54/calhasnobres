@@ -181,13 +181,13 @@ const content = (
         <TittleTopic>Cuidados extras</TittleTopic>
         <MessageText>  
             <ul >
-                <li className="list-group-item-dark" style={{color: 'black'}}>
+                <li className="list-group-item-dark">
                     Busque evitar a coleta das primeiras chuvas após a instalação, ou escolha a instalação da calha primeiro, garantindo
                     que esta tenha passado por algumas chuvas,e logo em seguida, faça a instalação da cisterna, de outra forma,
                     acople um dispositivo para desviar as primeiras águas. Enfim, previna a cisterna das
                     sujeiras do telhado.
                 </li>
-                <li className="list-group-item-dark" style={{color: 'black'}}>
+                <li className="list-group-item-dark">
                     Também considera-se fundamental que o reservatório esteja vedado, longe do alcance do sol ou detrimentos animais, 
                     impendindo proliferação
                     de algas.
