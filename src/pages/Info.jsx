@@ -3,7 +3,6 @@ import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 import Footer from '../components/Footer'
 import styled from 'styled-components'
-import image from '../assets/piazada.jpeg'
 
 const Container = styled.div`
   margin: 20px;
@@ -158,7 +157,7 @@ const content = (
       <Wrapper>
         <Topics>
           <TittleTopic>Inovação e conforto</TittleTopic>
-          <MessageText>Considerando as distintas arquiteturas atuais no mercado, a Calhas Nobres Chapecó percebeu a necessidade de inovar no mercado da funelaria e incluiu no catálogo diversas opções de acabamentos, entregando um produto funcional e seguro para seus clientes, com toques requintados que garantem o diferencial entre as demais empresas. </MessageText>
+          <MessageText>Considerando as distintas arquiteturas atuais no mercado, a Calhas Nobres Chapecó percebeu a necessidade de inovar no mercado da funelaria. Diante disso, e incluiu no catálogo diversas opções de acabamentos, entregando um produto funcional e seguro para seus clientes, com toques requintados que garantem o diferencial entre as demais empresas. </MessageText>
         </Topics>
         <Topics>
           <TittleTopic>Qualidade</TittleTopic>
