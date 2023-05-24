@@ -21,10 +21,10 @@ const Container = styled.div`
     height: auto;
   }
   @media (max-width: 540px) {
-  margin-left: 40px;
-  width: 85%;
-  max-width: 85%;
-  height: auto;
+    margin-left: 40px;
+    width: 85%;
+    max-width: 85%;
+    height: auto;
   }
 `
 const Image = styled.img`
@@ -33,20 +33,39 @@ const Image = styled.img`
   object-fit: cover;
   margin: 20px;
   padding: 20px;
+  @media (max-width: 540px) {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 10px;
+    padding: 10px;
+  }
 `
 const Title = styled.h2`
   margin: '10px';
   margin-left: 40px;
   font-family: 'Red Hat Display', sans-serif;
   font-weight: 300;
+  @media (max-width: 540px) {
+    margin: '10px';
+    font-size: 24px;
+    margin-left: 40px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 300;
+  } 
 `
 const Tag = styled.span`
   font-size: 24px;
   font-family: 'Red Hat Display', sans-serif;
   font-weight: 500;
   color: aquamarine;
+  @media (max-width: 540px) {
+    font-size: 18px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    color: aquamarine;
+  } 
 `
-
 const MessageInner = styled.span`
   position: absolute;
   top: 960px;
@@ -59,7 +78,7 @@ const MessageInner = styled.span`
   font-weight: bold;
   @media (max-width: 540px){
     left: 23px;
-    margin: 20px;
+    margin-top: -90px;
     width: 100%;
     margin-left: 40px;
     font-weight: 300;
@@ -100,7 +119,7 @@ const MessageTextAligned = styled.div`
     margin: 20px;
     max-width: 100%;
     @media (max-width: 540px) {
-        margin-top: 600px;
+        margin-top: 640px;
         font-size: 25px;
         color: white;
     }
@@ -181,13 +200,13 @@ const content = (
         <TittleTopic>Cuidados extras</TittleTopic>
         <MessageText>  
             <ul >
-                <li className="list-group-item-dark">
+                <li className="list-group-item-dark" style={{color: 'white', backgroundColor:'#211F20'}}>
                     Busque evitar a coleta das primeiras chuvas após a instalação, ou escolha a instalação da calha primeiro, garantindo
                     que esta tenha passado por algumas chuvas,e logo em seguida, faça a instalação da cisterna, de outra forma,
                     acople um dispositivo para desviar as primeiras águas. Enfim, previna a cisterna das
                     sujeiras do telhado.
                 </li>
-                <li className="list-group-item-dark">
+                <li className="list-group-item-dark" style={{color: 'white', backgroundColor:'#211F20'}}>
                     Também considera-se fundamental que o reservatório esteja vedado, longe do alcance do sol ou detrimentos animais, 
                     impendindo proliferação
                     de algas.
