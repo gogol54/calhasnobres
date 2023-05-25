@@ -135,7 +135,7 @@ const Footer = () => {
                         style={{
                             width: '20px',
                             height: '15px',
-                            marginRight:"10px", 
+                            marginLeft:"10px", 
                             color:"gray"
                         }}
                     />
@@ -156,7 +156,7 @@ const Footer = () => {
                     style={{
                         width: '20px',
                         height: '20px',
-                        marginRight:"10px", 
+                        marginLeft: '10px', 
                         color:"gray"
                     }}
                         

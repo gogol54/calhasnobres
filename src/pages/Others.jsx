@@ -126,19 +126,19 @@ const MessageTextAligned = styled.div`
 `
 const content = (
   <Container>
-    <Title>A importância da adoção de calhas nos dias de hoje:<Tag> vantagens e cuidados que <br />garantem a implementação de cisternas, um meio seguro e ideial visando um modelo sustentável.</Tag></Title>
+    <Title>A importância da adoção de calhas nos dias de hoje:<Tag> vantagens na implementação de cisternas.</Tag></Title>
     <Image 
       src='https://www.guiadoconstrutor.com.br/assets/uploads/articles/modelos-de-calhas-para-coleta-de-aguas-de-chuva.jpg'
       alt='calha em dia de chuva'
     />
     <MessageInner >
-      A ONU relata que até dois terços da população sofrerá com a falta da água até 2050, 
+      A ONU relata que até dois terços da população sofrerá com a falta de água até 2050, 
       e isso confirma a necessidade de pesquisas e propostas voltadas para resolução deste problema. 
-      Ao considerarmos, implíca em mais trabalho, dedicação e adoção de novos meios para garantir água potável e 
+      Ao considerarmos, implica em mais trabalho, dedicação e adoção de novos meios para garantir água potável e 
       também a segurança alimentar de diversas pessoas.
       Normalmente, as medidas que amenizam o consumo individual da água são: redução da lavagem de calçadas, 
       banhos com tempo reduzido, economia durante o dia-a-dia do condomínio, durante a lavagem das louças e ao lavar roupas. 
-      Entretanto, uma alternativa interessante que tem ganhado popularidade, adoção de um sistema de cisternas 
+      Entretanto, uma alternativa interessante que tem ganhado popularidade, é a adoção de um sistema de cisternas 
       para o reaproveitamento da água da chuva.
     </MessageInner>
     <MessageTextAligned>
@@ -149,7 +149,7 @@ const content = (
             sistemas tem ganhado espaço, justamente por ser uma alternativa eficaz ao considerar a obrigatoriedade da caixa
             d'água em novas instalações (imóveis novos), uma cisterna garante de além de o reservatório a possibilidade de baixar
             o custo mensal do consumo de água tratada, se reutilizando a água reservada para fins específicos. As cisternas
-            possuem diversos formatos e tamanhos e podem esta sendo instaladas em casas, apartamentos e condomínios.
+            possuem diversos formatos e tamanhos e podem estar sendo instaladas em casas, apartamentos e condomínios.
 
         </MessageText><br />
         <MessageText>
@@ -160,7 +160,7 @@ const content = (
             carros, roupas e até na caixa sanitária, basta garantir uma instalação segura para evitar estar bebendo de uma água
             que pode conter demasiada acidez, poeira, fuligem, sulfato, amônio e nitrato. As cisternas podem estar sendo enterradas,
             principalmente, se forem de maior porte, evitando assim a luz solar e protegendo a proliferação de algas ou outros organismos.
-            Enfim, é fundamental a existencia de filtros, caso contrário existem mais riscos de contaminação.   
+            Enfim, é fundamental a existência de filtros, caso contrário existem mais riscos de contaminação.   
         </MessageText><br />
     
     </MessageTextAligned>
@@ -169,14 +169,14 @@ const content = (
           <TittleTopic>Vantagens</TittleTopic>
           <MessageText> 
             <ul>
-                <li>É ecológicamente correto, visa o aproveitamento da água da chuva ao invés de um recurso híbrido potável.</li>
-                <li>Facíl instalação, podendo ser incluida em diferentes construções.</li>
+                <li>É ecologicamente correto, visa o aproveitamento da água da chuva ao invés de um recurso híbrido potável.</li>
+                <li>Fácil instalação, podendo ser incluída em diferentes construções.</li>
                 <li>Economia significante na conta de água, podendo reduzir o gasto em até 50%.</li>
                 <li>Diversas dimensões de reservatório, podendo inclusive ser uma minicisterna para caber em cozinhas, 
                     ou áreas de serviço. Uma variação de 80 até 15000 litros.</li>
                 <li>Ajuda na redução de enchentes, considerando que parte do que estará armazenado, iria para rios ou lagos.</li>
                 <li>Auxilia em crises hídricas, até em áreas de difícil acesso no sertão nordestino, justamente para combater
-                     às secas.</li>
+                    as secas.</li>
                 <li>Cultura de sustentabilidade nas construções, garantindo que todas as casas fizessem uso de cisternas.</li>
             </ul>
           </MessageText>
@@ -185,13 +185,13 @@ const content = (
           <TittleTopic>Desvantagens</TittleTopic>
           <MessageText>
             <ul>
-                <li>Manutenções frequentes: em razão da possível contaminação através degetos de animais ou animais mortos.</li>
+                <li>Manutenções frequentes: em razão da possível contaminação através dejetos de animais ou animais mortos.</li>
                 <li>O interior do reservatório também deve ser limpado com certa frequência.</li>
                 <li>Em caso de instalação com a rede de encanamentos, deve ser feita com certo cuidado e por profissionais,
                     evitando qualquer problema futuro. (obs: a água da chuva não é potável e não pode ser ingerida por seres 
                     humanos.)</li>
                 <li>Cisternas de plástico podem se deformar com o tempo, indica-se cisternas com filtro anti-UV ou de alvenaria.</li>
-                <li>Custos mais alto para cisternas enterradas ou subterrâneas.</li>
+                <li>Custos mais altos para cisternas enterradas ou subterrâneas.</li>
             </ul>
           </MessageText>
         </Topics>
@@ -208,8 +208,7 @@ const content = (
                 </li>
                 <li className="list-group-item-dark" style={{color: 'white', backgroundColor:'#211F20'}}>
                     Também considera-se fundamental que o reservatório esteja vedado, longe do alcance do sol ou detrimentos animais, 
-                    impendindo proliferação
-                    de algas.
+                    impedindo proliferação de algas.
                 </li>
             </ul>
         </MessageText>
