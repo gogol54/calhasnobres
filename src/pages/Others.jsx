@@ -213,6 +213,7 @@ const content = (
             </ul>
         </MessageText>
     </div>
+  
   </Container>)
   
 const Others = () => {
