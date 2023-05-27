@@ -53,7 +53,7 @@ const Navbar = () => {
                   <a className="dropdown-item" href="/chamines">Chaminés</a>
                   <div className="dropdown-divider"></div>
                   <a className="dropdown-item" href="/coberturas">Troca de cobertura</a>
-                  <a className="dropdown-item" href="/manutencao">Manutenção de telhados</a>
+                  <a className="dropdown-item" href="/manutencao">Limpeza e manutenção</a>
                 </div>
               </li>
               <li className="nav-item">

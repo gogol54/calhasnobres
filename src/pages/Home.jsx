@@ -12,8 +12,9 @@ import {
   Lens
 } from '@mui/icons-material'
 import Carousel from 'react-material-ui-carousel'
-import { Paper, Button } from '@mui/material'
+import { Paper } from '@mui/material'
 import { images } from '../dataset'
+import { useNavigate } from "react-router-dom"
 
 const Container = styled.div`
   margin: 20px;
@@ -32,7 +33,7 @@ const Container = styled.div`
     height: auto;
   }
   @media (max-width: 540px) {
-    margin-left: 40px;
+    margin-left: 60px;
     width: 85%;
     max-width: 85%;
     height: auto;
@@ -71,6 +72,10 @@ const ShadowBox = styled.div`
 const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
+  @media (max-width: 540px) {
+    display: flex;
+    flex-direction: column;
+  }
 `
 const MiniAnimation = styled.div`
   border: 10px solid teal;
@@ -97,11 +102,15 @@ const MessageText = styled.span`
   max-width: 100%;
 `
 const ImageSlider = styled.img`
-    object-fit: cover;
+    object-fit: contain;
     margin: 10px;
-    width: 80%;
-    height: 700px;
-    margin-left: 100px;
+    width: 1024px;
+    height: 576px;
+    @media (max-width: 540px) {
+      width: 376px;
+      max-width: 85%;
+      height: 400px;
+    }
 `
 const Btn = styled.button`
     position: absolute;
@@ -109,6 +118,10 @@ const Btn = styled.button`
     bottom: 20px;
     left: 43.5%;
     margin-top: 10px;
+    @media (max-width: 540px) {
+        bottom: 10px;
+        right: 12%;
+    }
 `
 const ImageTitle = styled.h2`
     position: absolute;
@@ -126,30 +139,56 @@ const ImageTitle = styled.h2`
 const Description = styled.p`
     position: absolute;
     z-index: 1000;
-    bottom: 40px;
+    bottom: 50px;
     align-items: center;
     justify-content: center;
     font-family: 'Red Hat Display', sans-serif;
     float: relative;
     font-weight: bold;
-    color: white;
+    color: black;
+    text-shadow: 0px 0px 5px white;
+    background-color: transparent;
     margin-left: 35%;
     max-width: 30%;
+    @media (max-width: 540px) {
+      position: absolute;
+      z-index: 1000;
+      bottom: 0px;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Red Hat Display', sans-serif;
+      margin-left: 5%;
+      max-width: 30%;
+      font-size: 14px;
+      text-shadow: 0px 0px 5px white;
+    }
 `
 
 const Home = () => {
   const [pressed, onPressed] = useState(false) 
+  const history = useNavigate()
+
   const sendRequest = (e) => {
     e.preventDefault()
     onPressed(!pressed)
-  }
+}
+const handleClick = (id) => {
+    console.log(id.toLowerCase())
+    if(('Chaminés').includes(id)){
+        history('/chamines')
+    } else{
+        history(`/${id.toLowerCase()}`)
+    }
+    
+}
+
   const Item = (props) => {
     return (
-        <Paper style={{backgroundColor:'#221F20'}} >
+        <Paper style={{backgroundColor:'#F2BC26'}} >
             <ImageTitle>{props.item.name}</ImageTitle>
             <Description>{props.item.description}</Description>
             <ImageSlider style={{objectFit: 'cover'}} src={props.item.image}/>
-            <Btn className="btn btn-warning">
+            <Btn className="btn btn-warning" onClick={() => handleClick(props.item.name)}>
                 Confira no VAR
             </Btn>
         </Paper>
@@ -165,7 +204,7 @@ const Home = () => {
         </MessageText>
 
     <Legend>Conheça nossos serviços</Legend>
-        <Carousel
+        <Carousel style={{marginLeft: '200px'}}
           NextIcon={<img width='20px' height='20px'
             src="https://icons-for-free.com/iconfiles/png/512/next+right+icon-1320166862802397293.png"/>}
           PrevIcon={<img width='20px' height='20px' src="https://prod.gusto-assets.com/wp-content/uploads/chevron-left-icon.png"/>}
@@ -189,11 +228,11 @@ const Home = () => {
         </center> 
         <span style={{fontSize: '20px', color: 'white'}}>1° passo:</span> Agende uma visita através do chat/whatsapp ou entre em contato ligando números que se encontram no rodapé.
       </ShadowBox>
-
+{/* 
       <IconPosition>
         <ArrowForward /> 
       </IconPosition>
-      
+       */}
       <ShadowBox> 
         <center>
           <MiniAnimation>
@@ -209,10 +248,10 @@ const Home = () => {
         <span style={{fontSize: '20px', color: 'white'}}>2° passo: </span> Tenha alguém disponível para nos receber no horário combinado.
       </ShadowBox>
       
-      <IconPosition>
+      {/* <IconPosition>
         <ArrowForward />
       </IconPosition>
-    
+     */}
       <ShadowBox> 
         <center>
           <MiniAnimation>
