@@ -166,10 +166,15 @@ const Description = styled.p`
     }
 `
 const Iframe = styled.iframe`
-    margin: 20px;
-    border: 2px solid black;
-    width: 900px; 
-    height: 500px;
+  margin: 20px;
+  border: 2px solid black;
+  width: 700px; 
+  height: 500px;
+    @media (max-width: 540px) {
+      width: 376px;
+      max-width: 85%;
+      height: 400px;
+    }
 `
 const Home = () => {
   const [pressed, onPressed] = useState(false) 
@@ -211,15 +216,18 @@ const handleClick = (id) => {
             telhado, embora podem ser encontradas em outras regiões da cobertura, sua finalidade é escoar a água da chuva; Os 
             Rufos são utilizados para encapamentos, vedação e como auxílio para escoar a água dos telhados.
         </MessageText>
-        <br />
         <center>
-            <Iframe
-                type="video/mp4"
-                controls
-               
-                src="https://www.youtube.com/watch?v=fYBy_6dD9Os">
+            <Iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/fYBy_6dD9Os" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>    
             </Iframe>
         </center>
+        <br />
     </div>
     <Legend>Conheça nossos serviços</Legend>
         <Carousel style={{marginLeft: '200px'}}
