@@ -7,7 +7,6 @@ import {
   SecurityUpdateGood,
   Toys,
   Gavel,
-  ArrowForward,
   Smartphone,
   Lens
 } from '@mui/icons-material'
@@ -106,6 +105,7 @@ const ImageSlider = styled.img`
     margin: 10px;
     width: 1024px;
     height: 576px;
+    margin-left: 25px;
     @media (max-width: 540px) {
       width: 376px;
       max-width: 85%;
@@ -116,7 +116,9 @@ const Btn = styled.button`
     position: absolute;
     float: relative;
     bottom: 20px;
-    left: 43.5%;
+    left: 452px;
+    height: 40px;
+    width: 120px;
     margin-top: 10px;
     @media (max-width: 540px) {
         bottom: 10px;
@@ -163,7 +165,12 @@ const Description = styled.p`
       text-shadow: 0px 0px 5px white;
     }
 `
-
+const Iframe = styled.iframe`
+    margin: 20px;
+    border: 2px solid black;
+    width: 900px; 
+    height: 500px;
+`
 const Home = () => {
   const [pressed, onPressed] = useState(false) 
   const history = useNavigate()
@@ -184,25 +191,36 @@ const handleClick = (id) => {
 
   const Item = (props) => {
     return (
-        <Paper style={{backgroundColor:'#F2BC26'}} >
+        <Paper style={{backgroundColor:'black'}} >
             <ImageTitle>{props.item.name}</ImageTitle>
             <Description>{props.item.description}</Description>
             <ImageSlider style={{objectFit: 'cover'}} src={props.item.image}/>
             <Btn className="btn btn-warning" onClick={() => handleClick(props.item.name)}>
-                Confira no VAR
+                SAIBA MAIS
             </Btn>
         </Paper>
     )
   }
   const content = (<>
   <Container>
-    <Title>Calhas e Rufos, saiba sobre suas funcionalidades</Title>
+    <div>
+        <Title>Calhas e Rufos, saiba sobre suas funcionalidades</Title>
         <MessageText>Entre todos os materias de construção civil que estão inclusos no telhado, Calhas e Rufos são os que mais 
             merecem sua atenção, sabendo que são componentes essenciais para a seguração do seu telhado. E portanto, se estiver 
             curioso sobre o que cada um significa, as definições resumidas seriam: Calhas são utilizadas como complemento do 
-            telhado, embora podem ser encontradas em outras regiões da cobertura, sua finalidade é escoar a água da chuva; 
+            telhado, embora podem ser encontradas em outras regiões da cobertura, sua finalidade é escoar a água da chuva; Os 
+            Rufos são utilizados para encapamentos, vedação e como auxílio para escoar a água dos telhados.
         </MessageText>
-
+        <br />
+        <center>
+            <Iframe
+                type="video/mp4"
+                controls
+               
+                src="https://www.youtube.com/watch?v=fYBy_6dD9Os">
+            </Iframe>
+        </center>
+    </div>
     <Legend>Conheça nossos serviços</Legend>
         <Carousel style={{marginLeft: '200px'}}
           NextIcon={<img width='20px' height='20px'
