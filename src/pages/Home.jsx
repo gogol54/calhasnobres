@@ -85,9 +85,7 @@ const MiniAnimation = styled.div`
   margin: 10px;
   bottom: 20px;
 `
-const IconPosition = styled.div`
-  margin-top: 150px;
-`
+
 const Legend = styled.h4`
   margin: '10px';
   margin-left: 40px;
@@ -110,6 +108,7 @@ const ImageSlider = styled.img`
       width: 376px;
       max-width: 85%;
       height: 400px;
+      z-index: -1;
     }
 `
 const Btn = styled.button`
@@ -121,8 +120,11 @@ const Btn = styled.button`
     width: 120px;
     margin-top: 10px;
     @media (max-width: 540px) {
-        bottom: 10px;
-        right: 12%;
+        z-index: 1000;
+        bottom: 20px;
+        left: 10%;
+        height: 40px;
+        width: 120px;
     }
 `
 const ImageTitle = styled.h2`
@@ -155,12 +157,12 @@ const Description = styled.p`
     @media (max-width: 540px) {
       position: absolute;
       z-index: 1000;
-      bottom: 0px;
+      bottom: 50px;
       align-items: center;
       justify-content: center;
       font-family: 'Red Hat Display', sans-serif;
-      margin-left: 5%;
-      max-width: 30%;
+      margin-left: 10%;
+      max-width: 50%;
       font-size: 14px;
       text-shadow: 0px 0px 5px white;
     }
@@ -218,8 +220,6 @@ const handleClick = (id) => {
         </MessageText>
         <center>
             <Iframe 
-                width="560" 
-                height="315" 
                 src="https://www.youtube.com/embed/fYBy_6dD9Os" 
                 title="YouTube video player" 
                 frameborder="0" 
@@ -252,7 +252,7 @@ const handleClick = (id) => {
             }} />
           </MiniAnimation> 
         </center> 
-        <span style={{fontSize: '20px', color: 'white'}}>1° passo:</span> Agende uma visita através do chat/whatsapp ou entre em contato ligando números que se encontram no rodapé.
+        <span style={{fontSize: '20px', color: 'white'}}>1° passo:</span> Agende uma visita através do chat/whatsapp ou entre em contato ligando nos telefones que se encontram no rodapé.
       </ShadowBox>
 {/* 
       <IconPosition>
