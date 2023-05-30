@@ -9,6 +9,7 @@ import Chamines from './pages/Chamines'
 import Coberturas from './pages/Coberturas'
 import Manutencao from './pages/Manutencao'
 import Others from './pages/Others'
+import Rufos from './pages/Rufos'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/chamines" element={<Chamines />} />
         <Route path="/coberturas" element={<Coberturas />} />
         <Route path="/manutencao" element={<Manutencao />} />
+        <Route path="/rufos" element={<Rufos />} />
         <Route path="/others" element={<Others />} />
       </Routes>
     </Router>

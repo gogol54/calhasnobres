@@ -170,8 +170,8 @@ const Description = styled.p`
 const Iframe = styled.iframe`
   margin: 20px;
   border: 2px solid black;
-  width: 700px; 
-  height: 500px;
+  width: 756px; 
+  height: 400px;
     @media (max-width: 540px) {
       width: 376px;
       max-width: 85%;
@@ -216,7 +216,8 @@ const handleClick = (id) => {
             merecem sua atenção, sabendo que são componentes essenciais para a seguração do seu telhado. E portanto, se estiver 
             curioso sobre o que cada um significa, as definições resumidas seriam: Calhas são utilizadas como complemento do 
             telhado, embora podem ser encontradas em outras regiões da cobertura, sua finalidade é escoar a água da chuva; Os 
-            Rufos são utilizados para encapamentos, vedação e como auxílio para escoar a água dos telhados.
+            Rufos são utilizados para encapamentos, vedação e como auxílio para escoar a água dos telhados. Da mesma forma, abaixo 
+            um pequeno video explicando a importância destes componentes e suas diferenças.
         </MessageText>
         <center>
             <Iframe 
@@ -252,7 +253,7 @@ const handleClick = (id) => {
             }} />
           </MiniAnimation> 
         </center> 
-        <span style={{fontSize: '20px', color: 'white'}}>1° passo:</span> Agende uma visita através do chat/whatsapp ou entre em contato ligando nos telefones que se encontram no rodapé.
+        <span style={{fontSize: '20px', color: 'white'}}>1° passo:</span> Agende uma visita através do whatsapp ou entre em contato ligando nos telefones que se encontram no rodapé.
       </ShadowBox>
 {/* 
       <IconPosition>

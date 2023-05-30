@@ -49,7 +49,7 @@ const Title = styled.h1`
     margin-left: 10px;
   }
 `
-const SubTitle = styled.h5`
+const SubTitle = styled.h4`
   margin: '10px';
   margin-left: 20px;
   font-family: 'Red Hat Display', sans-serif;
