@@ -62,7 +62,7 @@ const content = (
   </div>)
     
 const Algerosas = () => {
-  const flag = 'algerosas'
+  const flag = 'Algerosas'
   return (
     <>
     <Navbar /> 

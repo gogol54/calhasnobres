@@ -96,12 +96,11 @@ const content = (
             específicos para o lado de fora. Tenha a certeza de estar adquirindo o modelo certo antes de comprá-lo.
         </MessageText> 
     </div> <br />
-    <TittleTopic>Confira nosso trabalho</TittleTopic>
     
   </Container>)
   
 const Calhas = () => {
-  const flag = 'calhas'
+  const flag = 'Calhas'
   return (
   <div style={{backgroundColor: '#211F20'}}>
     <Navbar /> 

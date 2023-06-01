@@ -31,6 +31,13 @@ const Sidebar = () => {
               <span style={{marginLeft:'10px', marginTop:'20px'}}>Calhas</span>  </a>
           </li>
           <li>
+            <a href="/rufos">  
+              <i aria-hidden="true">
+                <Rocket className='sidebarIcon' /> 
+              </i>  
+              <span style={{marginLeft:'10px', marginTop:'20px'}}>Rufos</span>  </a>
+          </li>
+          <li>
             <a href="/algerosas">  
               <i aria-hidden="true">
                 <Rocket className='sidebarIcon' /> 

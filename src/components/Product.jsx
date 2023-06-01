@@ -1,21 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { Carousel } from 'react-carousel-minimal';
-
-const images = [
-    {
-        image: 'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/rufos%2FR4.jpeg?alt=media&token=5ff85b81-c32b-40e2-a45b-3ca693094235',
-      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/rufos%2FR4.jpeg?alt=media&token=5ff85b81-c32b-40e2-a45b-3ca693094235',
-    },
-    {
-        image: 'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/rufos%2FR5.jpeg?alt=media&token=0b89b68a-b74a-43c3-91d0-6aa6fe8460b8',
-      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/rufos%2FR5.jpeg?alt=media&token=0b89b68a-b74a-43c3-91d0-6aa6fe8460b8'
-    },
-    {
-        image: 'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/rufos%2FR6.jpeg?alt=media&token=d711fd60-2cb9-42b8-a371-f84ee15260ce',
-      thumbnail: 'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/rufos%2FR6.jpeg?alt=media&token=d711fd60-2cb9-42b8-a371-f84ee15260ce'
-    }
-  ]
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 const Container = styled.div`
   margin: 20px;
@@ -44,6 +30,13 @@ const Wrapper = styled.div`
   flex-wrap:wrap;
   justify-content:space-between;
   position:relative;
+  @media (max-width: 540px) {
+    margin-left: 10px;
+    right: 10px;
+    width: 80%;
+    max-width: 80%;
+    height: auto;
+  }
 `
 const BoxToutchable = styled.div`
   background-color: #3d3c3d;
@@ -67,30 +60,37 @@ const BoxImage = styled.img`
   object-fit: cover;
 `
 //selante PU
-const captionStyle = {
-    fontSize: '2em',
-    fontWeight: 'bold',
-}
-const slideNumberStyle = {
-    fontSize: '20px',
-    fontWeight: 'bold',
-}
+
+const TittleTopic = styled.h3`
+  font-weight: 300;
+  color: aquamarine;
+  margin: 20px;
+  margin-left: 30px;
+  @media (max-width: 540px) {
+        text-align: center;
+        width: 70%;
+        margin: 10px;
+    }
+`
 
 const Product = (props) => {
   const [id, setIndexId] = useState(null)
+  const tittle = String(props.flag)
+
   const list = props.data.filter((item, index) => {
-    if((item.names).includes(props.flag)){
+    if((item.names).includes((props.flag).toLowerCase())){
         return item.images
     }
   })
-  console.log(list)
-  console.log(id)
+  console.log(tittle)
+
   const handleClick = (index) => {
     setIndexId(index)
   }
 
   return (
     <Container>
+      <TittleTopic>Confira nossos trabalhos</TittleTopic> 
       <Wrapper>
        {
         list[0].images.map((item, index) => (
@@ -101,83 +101,74 @@ const Product = (props) => {
             </BoxToutchable>
         ))
        }
-       
-
-
-<div class="modal kitchens-modal fade" id="kitchens-modal" >
-    <div class="modal-dialog modal-lg" >
-        <div class="modal-content" style={{width: '1024px', height: 'auto', backgroundColor: '#3D3C3D', color: '#E7E7E7'}}>
-            <div class="modal-header">
-                <h1>Calhas</h1>
-                <h3>Confira...</h3>
-            </div>
-
-            <div class="modal-body">
-                <div class="row">
-                    <Carousel
-                        data={images}
-                        time={5000}
-                        width="850px"
-                        height="500px"
-                        captionStyle={captionStyle}
-                        radius="10px"
-                        slideNumber={true}
-                        slideNumberStyle={slideNumberStyle}
-                        captionPosition="bottom"
-                        automatic={true}
-                        dots={true}
-                        pauseIconColor="white"
-                        pauseIconSize="40px"
-                        slideBackgroundColor="darkgrey"
-                        slideImageFit="cover"
-                        thumbnails={true}
-                        thumbnailWidth="30px"
-                        
-                        style={{
-                            textAlign: "center",
-                            width: "850px",
-                            maxHeight: "auto",
-                            margin: "40px auto",
-                            objectFit: 'cover',
-                        }}
-                    />
-                </div>
-            </div>
-       
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
-            </div>
-         
-        </div>
-    </div>
-</div>
-
-<div class="modal" id="myModal" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h3 class="modal-title"></h3>
-            </div>
-
-            <div class="modal-body">
-                <div id="modalCarousel" class="carousel">
-                    <div class="carousel-inner">
-
+        <div class="modal kitchens-modal fade" id="kitchens-modal" >
+            <div class="modal-dialog modal-lg" >
+                <div class="modal-content"
+                    style={{
+                        width: 'auto',
+                        height: 'auto',
+                        backgroundColor: '#3D3C3D',
+                        color: '#E7E7E7'  
+                    }}
+                >
+                    <div class="modal-header">
+                        <h1>{tittle ? tittle : 'Trabalhos'}</h1>
+                      
                     </div>
 
-                    <a class="carousel-control left" href="#modalCarousel" data-slide="prev">
-                        <i class="glyphicon glyphicon-chevron-left"></i>
-                    </a>
-                    <a class="carousel-control right" href="#modalCarousel" data-slide="next">
-                        <i class="glyphicon glyphicon-chevron-right"></i>
-                    </a>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div
+                                style={{
+                                    width: 'auto',
+                                    height: 'auto',
+                                }}
+                            >
+                                <Carousel>  
+                                {list[0].images[id]?.map((item, i) => (
+                                    <img 
+                                        src={item} 
+                                    />
+                                ))}
+                                </Carousel>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+                    </div>
+                
+                </div>
+
+            </div>
+        </div>
+
+        <div class="modal" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h3 class="modal-title"></h3>
+                    </div>
+
+                    <div class="modal-body">
+                        <div id="modalCarousel" class="carousel">
+                            <div class="carousel-inner">
+
+                            </div>
+
+                            <a class="carousel-control left" href="#modalCarousel" data-slide="prev">
+                                <i class="glyphicon glyphicon-chevron-left"></i>
+                            </a>
+                            <a class="carousel-control right" href="#modalCarousel" data-slide="next">
+                                <i class="glyphicon glyphicon-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-       
       </Wrapper>
     </Container>
   )

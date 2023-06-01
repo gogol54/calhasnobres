@@ -60,7 +60,6 @@ export const data = [
                 'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/algerosas%2FA7.jpeg?alt=media&token=589f2ffd-e903-4477-b3b6-cc7455fb07b2',
                 'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/algerosas%2FA9.jpeg?alt=media&token=384c951c-0f83-4ec4-b12b-0f86d3830ac2',
                 'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/algerosas%2FA10.jpeg?alt=media&token=85946d3d-5f48-4801-b720-1d8bfd84f5ff',
-                'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/manut%2Fvideo.mp4?alt=media&token=b6dc9954-8110-4738-bcc2-f4fd0b07bba9',
             ],
             [    
                 'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/algerosas%2FA11.jpeg?alt=media&token=3f593ebf-30d9-47f2-b08c-cfda9c8b94b4',
@@ -230,7 +229,7 @@ export const data = [
     }, 
     {
         id: 11,
-        names: ['manut'],
+        names: ['manutencao'],
         images: [
             [
               'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/manut%2FCoche.jpeg?alt=media&token=bad668e0-03ae-4059-9c02-ac3c257969ad',
