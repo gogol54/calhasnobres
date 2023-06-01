@@ -126,9 +126,9 @@ export const data = [
             ],
             [
                 'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/calhas%2FC6.jpeg?alt=media&token=e95a12fa-b159-416d-a654-8ff6c3532681',
+                'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/calhas%2FC7.jpeg?alt=media&token=8c148ca7-9bdc-4d23-8699-2f477d226a3c',
             ],
             [
-                'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/calhas%2FC7.jpeg?alt=media&token=8c148ca7-9bdc-4d23-8699-2f477d226a3c',
                 'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/calhas%2FC8.jpeg?alt=media&token=1c324342-85ea-4ea9-ade0-9bf581a1489d',
             ],
         ],
@@ -233,12 +233,20 @@ export const data = [
         names: ['manut'],
         images: [
             [
-                'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/manut%2FCoche.jpeg?alt=media&token=bad668e0-03ae-4059-9c02-ac3c257969ad',
-                'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/manut%2FEMENDADUTO.jpeg?alt=media&token=0c4115c8-29d9-475a-a6f3-2c54c7354adf',
-                'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/manut%2Fdutocalha.jpeg?alt=media&token=173fab85-a32b-486f-8a63-67bc7d5f37e9',
-                'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/manut%2Femenda.jpeg?alt=media&token=18c80740-1f66-4236-8ea8-25e2c8e4f610',
-                'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/manut%2Flixandoemenda.jpeg?alt=media&token=922d057c-d3be-40b2-8810-e619d00bb8a8',
-                'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/manut%2FmanutecTelhados.jpeg?alt=media&token=0cfa0f3e-b345-49d3-92f3-e76a6e7ed038',
+              'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/manut%2FCoche.jpeg?alt=media&token=bad668e0-03ae-4059-9c02-ac3c257969ad',
+            ],
+            [
+              'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/manut%2FEMENDADUTO.jpeg?alt=media&token=0c4115c8-29d9-475a-a6f3-2c54c7354adf',
+            ],
+            [  
+              'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/manut%2Fdutocalha.jpeg?alt=media&token=173fab85-a32b-486f-8a63-67bc7d5f37e9',
+              'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/manut%2Femenda.jpeg?alt=media&token=18c80740-1f66-4236-8ea8-25e2c8e4f610',
+            ],
+            [
+              'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/manut%2Flixandoemenda.jpeg?alt=media&token=922d057c-d3be-40b2-8810-e619d00bb8a8',
+            ],
+            [  
+              'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/manut%2FmanutecTelhados.jpeg?alt=media&token=0cfa0f3e-b345-49d3-92f3-e76a6e7ed038',
             ],
         ],
     }, 

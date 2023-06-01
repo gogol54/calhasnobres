@@ -97,15 +97,17 @@ const content = (
         </MessageText> 
     </div> <br />
     <TittleTopic>Confira nosso trabalho</TittleTopic>
+    
   </Container>)
   
 const Calhas = () => {
+  const flag = 'calhas'
   return (
   <div style={{backgroundColor: '#211F20'}}>
     <Navbar /> 
     <Sidebar />
       {content}
-      <Product data={data}/>
+      <Product data={data} flag={flag}/>
     <Footer />
   </div>
   )
