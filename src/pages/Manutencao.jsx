@@ -10,11 +10,13 @@ const content = (
     importância de manter calhas limpas, limpeza do telhado, etc...
   </div>)
 const Manutencao = () => {
+  const flag='Manutencao'
   return (
   <>
     <Navbar /> 
     <Sidebar />
     {content}
+    <Product data={data} flag={flag} />
     <Footer />
   </>
   )

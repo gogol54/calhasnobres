@@ -2,10 +2,11 @@ import React from 'react'
 import "./styles/sidebar.css"
 import { 
   Home,
-  Rocket,
+  CalendarViewDay,
   AirlineSeatLegroomNormal,
   DoorFront,
   Layers,
+  BorderOuter,
   Cottage
 } from '@mui/icons-material'
 
@@ -33,14 +34,14 @@ const Sidebar = () => {
           <li>
             <a href="/rufos">  
               <i aria-hidden="true">
-                <Rocket className='sidebarIcon' /> 
+                <BorderOuter className='sidebarIcon' /> 
               </i>  
               <span style={{marginLeft:'10px', marginTop:'20px'}}>Rufos</span>  </a>
           </li>
           <li>
             <a href="/algerosas">  
               <i aria-hidden="true">
-                <Rocket className='sidebarIcon' /> 
+                <CalendarViewDay className='sidebarIcon' /> 
               </i>  
               <span style={{marginLeft:'10px', marginTop:'20px'}}>Algerosas</span>  </a>
           </li>
