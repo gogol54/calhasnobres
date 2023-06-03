@@ -61,7 +61,7 @@ const BoxImage = styled.img`
 `
 //selante PU
 
-const TittleTopic = styled.h3`
+const TittleTopic = styled.h4`
   font-weight: 300;
   color: aquamarine;
   margin: 20px;
@@ -90,7 +90,7 @@ const Product = (props) => {
 
   return (
     <Container>
-      <TittleTopic>Confira nossos trabalhos</TittleTopic> 
+      <TittleTopic>Confira nossos trabalhos relacionados a {tittle}</TittleTopic> 
       <Wrapper>
        {
         list[0].images.map((item, index) => (

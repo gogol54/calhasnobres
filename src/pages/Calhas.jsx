@@ -42,7 +42,7 @@ const Title = styled.h2`
     font-weight: 300;
   } 
 `
-const TittleTopic = styled.h3`
+const TittleTopic = styled.h4`
   font-weight: 300;
   color: aquamarine;
   margin: 20px;
@@ -56,46 +56,122 @@ const MessageText = styled.span`
   font-weight: 300;
   max-width: 100%;
 `
+const Topics = styled.div`
+  margin: 10px;
+  margin-left: 20px;
+  flex: 2;
+`
+const Wrapper = styled.div`
+    display: flex;
+    flex-direction: inline;
+    margin-top: 10px;
+    @media (max-width: 920px) and (min-width: 550px)  {
+        flex-direction: column;
+    }
+    @media (max-width: 540px) {
+        flex-direction: column;
+    }
+`
+const Links = styled.a`
+    color: aquamarine;
+    text-decoration: none;
+    &:hover{
+        color: #c7c7c7;
+        text-decoration: none;
+    }
+`
 const content = (
   <Container className='container' >
     <Title> 
-      Calhas e Rufos<span style={{fontSize: '24px'}}></span> 
+      Calhas <span style={{fontSize: '24px'}}></span> 
     </Title> 
+    <hr style={{border: '1px solid aquamarine'}}/>
     <div>
-        <TittleTopic>Tipos de calhas</TittleTopic>
-        
-        <TittleTopic>Qual calha escolher para a minha casa</TittleTopic>
-        <MessageText> 
-          A calha é uma estrutura instalada no telhado que da sua casa que serve essencialmente para fazer o escoamento 
-          da água da chuva. Por conta disso, é comum encontrarmos, no mercado, diferentes modelos de calhas disponíveis, 
-          cada uma sendo mais adequada a um tipo específico de construção. De um modo geral, um profissional pode ajudá-lo 
-          a definir que tipo de calha de chuva é mais ideal para a sua residência, porque a escolha depende de fatores como 
-          o modelo de telha instalado, o tamanho do telhado e o encaixe da construção, além do tipo de escoamento esperado. 
-          Um dos modelos de calha mais comum é a calha de PVC. Mais barata que as demais e mais fácil de ser pintada que as 
-          calhas feitas de metal, esse modelo costuma resistir ao tempo de modo satisfatório e apresenta uma resistência contra
-          intempéries da natureza. A parte mais legal dessa opção é que é que se trata de um material leve. Porém, também por
-          isso, não suporta pesos muito grandes, então é necessário tomar bastante cuidado, tudo bem? Caso você more próximo 
-          à praia e esteja preocupado com as ações da maresia, talvez seja uma boa ideia investir nas calhas de aço galvanizado.
-          Resistentes como as de PVC, mas com uma força mais proeminente, essas peças suportam pesos maiores e não se quebram
-          com facilidade. As calhas de alumínio, da mesma forma, não enferrujam com facilidade e apresentam igual resistência 
-          ao acúmulo de peso, sem correrem o risco de deformarem. O importante é escolher o modelo que melhor atende às suas 
-          necessidades e melhor combina com a estrutura da sua casa. Pense bastante no design final, 
-          para que o projeto não destoe do que você tinha imaginado inicialmente. 
-        </MessageText> 
-        <TittleTopic>O que posso fazer para ajudar a escoar a água do meu telhado</TittleTopic>    
-        <MessageText>     
-            Uma boa dica é investir, além das calhas, em materiais chamados de rufos. A estrutura, que é feita geralmente 
-            de metal, serve para evitar que a água da chuva se infiltre na sua casa, seja no telhado ou nas paredes. Instalá-los 
-            é importante porque evita problemas estruturais a longo prazo, como mofo e fungos. Na Leroy Merlin, você encontra 
-            rufos em diversos tamanhos e medidas, sendo possível adquirir o modelo que melhor se encaixa na sua casa e no seu 
-            bolso. É possível escolher entre peças em branco, cinza ou marrom, o que permite que você compre aquelas que menos 
-            ficam em evidência na sua casa. Mas fique atento: é importante que você faça as instalações da maneira adequada, 
-            porque apenas um desvio pode afetar o resultado final e a funcionalidade do produto. O mais indicado é chamar um 
-            profissional para encaixar as peças, que, a depender do modelo, precisam ter uma distância grande ou pequena entre si.
-            Além disso, alguns rufos são mais adequados a serem instalados do lado de dentro da sua casa, enquanto outros são 
-            específicos para o lado de fora. Tenha a certeza de estar adquirindo o modelo certo antes de comprá-lo.
-        </MessageText> 
-    </div> <br />
+            <MessageText>
+            As calhas de chuva são estruturas instaladas nas bordas de telhados, beirais e marquises para coletar e direcionar 
+            a água da chuva para longe da estrutura do edifício. Existem vários tipos de calhas de chuva disponíveis, com 
+            diferentes materiais, formatos e tamanhos. A seguir, alguns dos tipos mais comuns:
+            <ul>
+                <li>
+                Calhas de alumínio: São fabricadas em alumínio, um material leve, resistente à corrosão e durável. As calhas de alumínio 
+                são populares devido à sua baixa manutenção e longa vida útil. Elas estão disponíveis em diferentes cores e podem
+                ser pintadas para combinar com a estética da sua casa.
+                </li>
+                <li>
+                Calhas de zinco: As calhas de zinco são resistentes a solda, seguras, de baixa manutenção e custo acessível. São 
+                comumente adotadas em cidades que não possuem mar, justamente em razão da maresia, pois esta afeta diretamente 
+                na longevidade do material, criando corrosões e demais problemas.
+                </li>
+                <li>
+                Calha galvalume nacional: O tipo de aço galvalume é atualmente um dos melhores materiais para este segmento, 
+                dito isto em razão de ser composto por aproximadamente 45% zinco, e os outros 55% sendo fabricados de alumínio e silício,
+                ou seja, substâncias de estabilidade eminente, o que garante uma ampla longevidade para suas calhas.
+                Enfim, material excelente contra corrosões.
+                </li>
+            </ul>
+            </MessageText>
+            <MessageText> 
+            Esses são exemplos dos tipos de calhas de chuva disponíveis por Calhas Nobres. 
+            </MessageText>
+            <TittleTopic>Dicas</TittleTopic>
+            <Wrapper>
+                <Topics>
+                    <TittleTopic>Qual calha devo escolher</TittleTopic>
+                    <MessageText>
+                    A escolha da calha adequada depende de vários fatores, incluindo o clima da região, o estilo do edifício,
+                    a estética desejada e o orçamento disponível. Algumas considerações importantes ao escolher uma 
+                    calha seriam:
+                    <ul>
+                        <li>
+                        Material: Considere os diferentes materiais disponíveis,alumínio, zinco, galvalume e outros, avalie
+                        suas propriedades, durabilidade, resistência à corrosão e estética. Cada material tem suas 
+                        vantagens e desvantagens, por isso é importante pesquisar e determinar qual se adapta melhor às suas 
+                        necessidades.
+                        </li>
+                        <li>
+                        Clima: Leve em consideração as condições climáticas da sua região. Se você mora em uma área com fortes
+                        chuvas, neve ou ventos intensos, pode ser necessário escolher um material resistente e durável, como 
+                        galvalume, comprovadamente melhor que o aço galvanizado. Além disso, certifique-se de que a
+                        calha escolhida tenha a capacidade de lidar com a quantidade de água esperada durante as chuvas.
+                        </li>
+                        <li>
+                        Estilo arquitetônico: Considere o estilo do edifício. Algumas calhas são mais adequadas para edifícios 
+                        modernos, enquanto outras combinam melhor com construções mais tradicionais.
+                        </li>
+                        <li>
+                        Manutenção: Avalie a quantidade de manutenção necessária para cada tipo de calha. Algumas calhas exigem
+                        limpeza regular e manutenção para garantir seu bom funcionamento, enquanto outras são mais autolimpantes
+                        e exigem menos cuidados.
+                        </li>
+                        <li>
+                        Orçamento: Considere o seu orçamento disponível. Alguns materiais tendem a ser mais 
+                        caros do que outros. Pondere o custo em relação à durabilidade e à estética desejada.
+                        </li>
+                    </ul>
+                    </MessageText>
+                </Topics>
+                <Topics>
+                    <TittleTopic>O que posso fazer para escoar a água do telhado</TittleTopic>
+                    <MessageText>
+                    Uma dica ideal seria investir em materiais como: <Links href='/rufos'>rufos</Links> e <Links href='/algerosas'>algerosas</Links>. 
+                    Normalmente, também são estruturas de metal, e servem para evitar que a água da chuva se infiltre na sua casa, 
+                    seja no telhado ou nas paredes. Instalá-los é importante porque evita problemas a longo prazo, como por exemplo 
+                    mofos e fungos. 
+                    Entretanto, o mais indicado é chamar um profissional para melhor avaliar o seu caso, e posteriormente instalar 
+                    as peças, que, a depender do modelo, precisam ter uma distância grande ou pequena entre si.
+                    Além disso, alguns  <Links href='/rufos'>rufos</Links> são mais adequados na parte interna 
+                    da sua casa, enquanto outros são específicos para o lado de fora. 
+                    Tenha a certeza de estar adquirindo o modelo certo antes de comprá-lo.
+                    </MessageText>
+                </Topics>
+            </Wrapper>
+        <MessageText>
+        É sempre recomendável consultar um profissional especializado em calhas para obter 
+        orientações personalizadas. Sendo assim, podemos estar avaliando sua situação específica e fornecendo
+        recomendações com base nas necessidades do seu projeto. contate-nos pelos números disponíveis no rodapé,
+        ou clicando <Links href='https://api.whatsapp.com/message/P47VSLNIJS2YG1?autoload=1&app_absent=0'>aqui</Links>.
+        </MessageText>
+    </div> 
     
   </Container>)
   
@@ -107,6 +183,7 @@ const Calhas = () => {
     <Sidebar />
       {content}
       <Product data={data} flag={flag}/>
+      <br /><br />
     <Footer />
   </div>
   )

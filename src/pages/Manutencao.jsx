@@ -7,7 +7,7 @@ import { data } from '../dataset'
 
 const content = (
   <div className='container' style={{backgroundColor: 'green'}}>
-    importância de manter calhas limpas, limpeza do telhado, etc...
+    importância de manter calhas limpas, limpeza do telhado, etc... selante PU para tankar vazamentos
   </div>)
 const Manutencao = () => {
   const flag='Manutencao'

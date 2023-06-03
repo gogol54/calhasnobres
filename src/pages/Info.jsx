@@ -86,6 +86,18 @@ const Topics = styled.div`
   margin: 20px;
   flex: 2;
 `
+const Wrapper = styled.div`
+    display: flex;
+    flex-direction: inline;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    @media (max-width: 920px) and (min-width: 550px)  {
+        flex-direction: column;
+    }
+    @media (max-width: 540px) {
+        flex-direction: column;
+    }
+`
 const Post = styled.div`
   flex: 2;
   margin-left: 40px;
@@ -129,18 +141,6 @@ const SpanClass = styled.span`
         margin-bottom: 20px;
     }
 `
-const Wrapper = styled.div`
-    display: flex;
-    flex-direction: inline;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    @media (max-width: 920px) and (min-width: 550px)  {
-        flex-direction: column;
-    }
-    @media (max-width: 540px) {
-        flex-direction: column;
-    }
-`
 const MapBox = styled.div`
     width: 100%;
     @media (max-width: 920px) and (min-width: 550px) {
@@ -151,7 +151,7 @@ const MapBox = styled.div`
 `
 const content = (
   <Container className='container container-fluid'>
-    <Title> Calhas nobres, fabricação de estruturas metálicas </Title>
+    <Title> Calhas nobres, corte dobra e instalação de calhas e algerosas </Title>
     <SubTitle>Buscando soluções com inovação, conforto e qualidade </SubTitle>
     <div>
       <Wrapper>

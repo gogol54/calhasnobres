@@ -115,7 +115,7 @@ const Btn = styled.button`
     position: absolute;
     float: relative;
     bottom: 20px;
-    left: 452px;
+    left: 45%;
     height: 40px;
     width: 120px;
     margin-top: 10px;
@@ -198,10 +198,10 @@ const handleClick = (id) => {
 
   const Item = (props) => {
     return (
-        <Paper style={{backgroundColor:'black'}} >
+        <Paper style={{backgroundColor:'black', width: '95%'}} >
             <ImageTitle>{props.item.name}</ImageTitle>
             <Description>{props.item.description}</Description>
-            <ImageSlider style={{objectFit: 'cover'}} src={props.item.image}/>
+            <ImageSlider style={{objectFit: 'cover', width: '95%'}} src={props.item.image}/>
             <Btn className="btn btn-warning" onClick={() => handleClick(props.item.name)}>
                 SAIBA MAIS
             </Btn>
@@ -211,7 +211,7 @@ const handleClick = (id) => {
   const content = (<>
   <Container>
     <div>
-        <Title>Calhas e Rufos, saiba sobre suas funcionalidades</Title>
+        <Title>Calhas e Rufos, principais diferenças.</Title>
         <MessageText>Entre todos os materias de construção civil que estão inclusos no telhado, Calhas e Rufos são os que mais 
             merecem sua atenção, sabendo que são componentes essenciais para a seguração do seu telhado. E portanto, se estiver 
             curioso sobre o que cada um significa, as definições resumidas seriam: Calhas são utilizadas como complemento do 
