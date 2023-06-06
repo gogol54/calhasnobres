@@ -85,12 +85,14 @@ const content = (
   <Container>
     <Title>Chaminés</Title>
     <hr style={{border: '1px solid aquamarine'}}/>
-    <MessageText>
-    Uma chaminé é uma estrutura vertical projetada para a exaustão de gases de combustão, fumaça, vapores ou outros subprodutos 
-    resultantes da queima de materiais. Elas são comumente encontradas em casas, edifícios comerciais e industriais para 
-    fornecer uma saída segura para os produtos da combustão. A chaminé possui várias funcionalidades importantes,
-    e abaixo, uma lista para melhor entendimento:
-    </MessageText>
+    <Topics>
+        <MessageText>
+        A chaminé é uma estrutura vertical projetada para a exaustão de gases de combustão, fumaça, vapores ou outros subprodutos 
+        resultantes da queima de materiais. Elas são comumente encontradas em casas, edifícios comerciais e industriais para 
+        fornecer uma saída segura para os produtos da combustão. A chaminé possui várias funcionalidades importantes,
+        e abaixo, uma lista para melhor entendimento:
+        </MessageText>
+    </Topics>
     <Wrapper>
         <Topics>
             <TittleTopic>Principais definições</TittleTopic>
@@ -107,7 +109,7 @@ const content = (
                     de queima, mantendo o ar interno limpo e saudável.
                     </li>
                     <li>
-                    Prevenção de incêndios: Uma chaminé adequadamente projetada e construída ajuda a prevenir incêndios. 
+                    Prevenção de incêndios: Uma chaminé adequadamente projetada ajuda a prevenir incêndios. 
                     Ela direciona os gases quentes para fora do ambiente, reduzindo o risco de ignição de materiais 
                     inflamáveis próximos à fonte de calor.
                     </li>

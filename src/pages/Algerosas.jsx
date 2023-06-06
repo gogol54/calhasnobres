@@ -5,6 +5,7 @@ import Product from '../components/Product'
 import Footer from '../components/Footer'
 import styled from 'styled-components'
 import { data } from '../dataset'
+
 const Container = styled.div`
   margin: 20px;
   background-color: #211F20;
@@ -105,10 +106,12 @@ const content = (
   <Container>
     <Title> Algerosas </Title>
     <hr style={{border: '1px solid aquamarine'}}/>
-   <MessageText>
-    As algerosas são elementos arquitetônicos e de proteção localizados na parte externa de um telhado, na área onde o telhado 
-    se estende além das paredes do edifício. Eles têm diversas funcionalidades e características, incluindo:
-    </MessageText>
+    <Topics>
+        <MessageText>
+        As algerosas são elementos arquitetônicos e de proteção localizados na parte externa de um telhado, na área onde o telhado 
+        se estende além das paredes do edifício. Eles têm diversas funcionalidades e características, incluindo:
+        </MessageText>
+    </Topics>
     <Wrapper>
         <Topics>
             <TittleTopic>Funcionalidades e características</TittleTopic>
@@ -131,13 +134,15 @@ const content = (
             </MessageText>
         </Topics>
     </Wrapper>
-    <MessageText>    
-    As características das algerosas podem variar dependendo do estilo arquitetônico do edifício e do projeto específico. 
-    Eles podem ter diferentes larguras, formas e materiais de construção.
-    Em resumo, as algerosas desempenham funções importantes, como proteção contra intempéries, direcionamento da água, 
-    infiltrações, entre outras. 
-    Sua presença é fundamental para a manutenção e a durabilidade da estrutura, bem como para a aparência do edifício.
-    </MessageText>
+    <Topics>
+        <MessageText>   
+        As características das algerosas podem variar dependendo do estilo arquitetônico do edifício e do projeto específico. 
+        Eles podem ter diferentes larguras, formas e materiais de construção.
+        Em resumo, as algerosas desempenham funções importantes, como proteção contra intempéries, direcionamento da água, 
+        infiltrações, entre outras. 
+        Sua presença é fundamental para a manutenção e a durabilidade da estrutura, bem como para a aparência do edifício.
+        </MessageText>
+    </Topics>
   </Container>)
     
 const Algerosas = () => {

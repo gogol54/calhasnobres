@@ -105,11 +105,13 @@ const content = (
   <Container>
     <Title>Coberturas</Title>
     <hr style={{border: '1px solid aquamarine'}}/>
-    <MessageText>
-    Calhas Nobres também dispoe de instalação de coberturas, ou seja, se caso você esteja construindo ou queira substituir
-    a cobertura da sua casa, contate-nos. Afinal, Existem vários motivos pelos quais alguém pode considerar a troca do telhado
-    de uma casa ou edifício. Verifique se alguns destes que estão listados abaixo se adequam ao seu problema:
-    </MessageText>
+    <Topics>
+        <MessageText>
+        Calhas Nobres também dispoe de instalação de coberturas, ou seja, se caso você esteja construindo ou queira substituir
+        a cobertura da sua casa, contate-nos. Afinal, Existem vários motivos pelos quais alguém pode considerar a troca do telhado
+        de uma casa ou edifício. Verifique se alguns destes que estão listados abaixo se adequam ao seu problema:
+        </MessageText>
+    </Topics>
     <Wrapper>
         <Topics>
             <TittleTopic>Prováveis motivos</TittleTopic>

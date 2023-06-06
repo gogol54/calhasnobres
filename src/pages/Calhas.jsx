@@ -87,7 +87,7 @@ const content = (
     </Title> 
     <hr style={{border: '1px solid aquamarine'}}/>
     <div>
-            <MessageText>
+        <MessageText>
             As calhas de chuva são estruturas instaladas nas bordas de telhados, beirais e marquises para coletar e direcionar 
             a água da chuva para longe da estrutura do edifício. Existem vários tipos de calhas de chuva disponíveis, com 
             diferentes materiais, formatos e tamanhos. A seguir, alguns dos tipos mais comuns:
@@ -109,18 +109,18 @@ const content = (
                 Enfim, material excelente contra corrosões.
                 </li>
             </ul>
-            </MessageText>
-            <MessageText> 
+        </MessageText>
+        <MessageText> 
             Esses são exemplos dos tipos de calhas de chuva disponíveis por Calhas Nobres. 
-            </MessageText>
-            <TittleTopic>Dicas</TittleTopic>
+        </MessageText>
+        <TittleTopic>Dicas</TittleTopic>
             <Wrapper>
                 <Topics>
                     <TittleTopic>Qual calha devo escolher</TittleTopic>
                     <MessageText>
-                    A escolha da calha adequada depende de vários fatores, incluindo o clima da região, o estilo do edifício,
-                    a estética desejada e o orçamento disponível. Algumas considerações importantes ao escolher uma 
-                    calha seriam:
+                    A escolha da calha adequada depende de vários fatores, incluindo: clima da região, estilo do edifício,
+                    estética desejada, orçamento disponível, entre outros. Algumas considerações importantes ao escolher uma 
+                    calha, seriam:
                     <ul>
                         <li>
                         Material: Considere os diferentes materiais disponíveis,alumínio, zinco, galvalume e outros, avalie
@@ -153,7 +153,7 @@ const content = (
                 <Topics>
                     <TittleTopic>O que posso fazer para escoar a água do telhado</TittleTopic>
                     <MessageText>
-                    Uma dica ideal seria investir em materiais como: <Links href='/rufos'>rufos</Links> e <Links href='/algerosas'>algerosas</Links>. 
+                    Além da utilização de calhas, uma boa opção seria investir em materiais como: <Links href='/rufos'>rufos</Links> e <Links href='/algerosas'>algerosas</Links>. 
                     Normalmente, também são estruturas de metal, e servem para evitar que a água da chuva se infiltre na sua casa, 
                     seja no telhado ou nas paredes. Instalá-los é importante porque evita problemas a longo prazo, como por exemplo 
                     mofos e fungos. 

@@ -157,7 +157,12 @@ const content = (
       <Wrapper>
         <Topics>
           <TittleTopic>Inovação e conforto</TittleTopic>
-          <MessageText>Considerando as distintas arquiteturas atuais no mercado, a Calhas Nobres Chapecó percebeu a necessidade de inovar no mercado da funelaria. Diante disso, e incluiu no catálogo diversas opções de acabamentos, entregando um produto funcional e seguro para seus clientes, com toques requintados que garantem o diferencial entre as demais empresas. </MessageText>
+          <MessageText>
+            Considerando as distintas arquiteturas atuais no mercado, a Calhas Nobres Chapecó percebeu a necessidade
+            de inovar no mercado da funelaria. Diante disso, incluiu no catálogo diversas opções de acabamentos, entregando 
+            um produto funcional e seguro para seus clientes, com toques requintados que garantem o diferencial entre as 
+            demais empresas.
+          </MessageText>
         </Topics>
         <Topics>
           <TittleTopic>Qualidade</TittleTopic>

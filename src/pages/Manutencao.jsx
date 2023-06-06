@@ -106,11 +106,13 @@ const content = (
     <Container>
     <Title>Limpeza e Manutenção</Title>
     <hr style={{border: '1px solid aquamarine'}}/>
-    <MessageText>
-    Você também pode contar com Calhas Nobres para garantir a manutenção das suas edificações, reforma de coberturas, 
-    selante para evitar vasamentos, limpeza de calhas, troca de componentes, enfim, todo e qualquer serviço qual disponibilizamos
-    também a instalação. abaixo encontra-se uma lista de todos os nossos serviços para fins de manutenção:
-    </MessageText>
+    <Topics>
+        <MessageText>
+        Você também pode contar com Calhas Nobres para garantir a manutenção das suas edificações, reforma de coberturas, 
+        selante para evitar vasamentos, limpeza de calhas, troca de componentes, enfim, todo e qualquer serviço qual disponibilizamos
+        também a instalação. abaixo encontra-se uma lista de todos os nossos serviços para fins de manutenção:
+        </MessageText>
+    </Topics>
     <Wrapper>
         <Topics>
             <TittleTopic>Reformas</TittleTopic>

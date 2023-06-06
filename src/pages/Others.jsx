@@ -154,13 +154,13 @@ const content = (
         </MessageText><br />
         <MessageText>
             O funcionamento ocorre da seguinte forma: a água é levada através das calhas até um filtro, o filtro é responsável 
-            por limpar as impurezas (folhas e galhos) e um freio d'água garante que a entrada da água agite o restante no 
+            por limpar as impurezas (folhas e galhos) e um freio d'água garante que a entrada da água não agite o restante no 
             reservatório e levante partículas sólidas que estejam depositadas no fundo. Uma observação importante, se dá em razão de 
             a água não ser potável, ou seja, não serve para o consumo humano. Porém, pode ser utilizada para lavar calçadas, 
             carros, roupas e até na caixa sanitária, basta garantir uma instalação segura para evitar estar bebendo de uma água
             que pode conter demasiada acidez, poeira, fuligem, sulfato, amônio e nitrato. As cisternas podem estar sendo enterradas,
             principalmente, se forem de maior porte, evitando assim a luz solar e protegendo a proliferação de algas ou outros organismos.
-            Enfim, é fundamental a existência de filtros, caso contrário existem mais riscos de contaminação.   
+            Enfim, é fundamental a existência de filtros, caso contrário existem mais riscos de contaminações.   
         </MessageText><br />
     
     </MessageTextAligned>
@@ -177,7 +177,7 @@ const content = (
                 <li>Ajuda na redução de enchentes, considerando que parte do que estará armazenado, iria para rios ou lagos.</li>
                 <li>Auxilia em crises hídricas, até em áreas de difícil acesso no sertão nordestino, justamente para combater
                     as secas.</li>
-                <li>Cultura de sustentabilidade nas construções, garantindo que todas as casas fizessem uso de cisternas.</li>
+                <li>Cultura de sustentabilidade em novas edificações.</li>
             </ul>
           </MessageText>
         </Topics>

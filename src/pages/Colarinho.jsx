@@ -85,31 +85,32 @@ const content = (
   <Container>
     <Title> Colarinho </Title>
     <hr style={{border: '1px solid aquamarine'}}/>
-    <MessageText>
-    Pode ser definico como sendo o acabamento utilizado no encontro entre o telhado e a chaminé de uma churrasqueira. 
-    O colarinho é uma peça que tem a função de fazer o acabamento estético e garantir a vedação adequada nessa área.
-
-    </MessageText>
+    <Topics>
+        <MessageText>
+        Pode ser definico como sendo o acabamento utilizado no encontro entre o telhado e a chaminé de uma churrasqueira. 
+        O colarinho é uma peça que tem a função de fazer o acabamento estético e garantir a vedação adequada nessa área.
+        </MessageText>
+    </Topics>
     <Wrapper>
         <Topics>
-        <TittleTopic>Recomendações</TittleTopic>
-        <MessageText>
-        O colarinho é colocado em torno da chaminé para proteger a passagem do telhado contra a infiltração de água e 
-        proporcionar uma aparência esteticamente agradável. Geralmente, é feito de materiais duráveis e resistentes às 
-        intempéries, como metal ou plástico resistente ao UV.
-        Ao instalar o colarinho no telhado, é importante garantir uma vedação adequada para evitar vazamentos de água. 
-        Isso pode ser feito utilizando selantes apropriados para telhados, como silicone ou mastique, para criar uma barreira
-        contra a entrada de água.
-        </MessageText>
-        <br />
-        <MessageText>
-        Além de fornecer proteção contra vazamentos, o colarinho também ajuda a manter a estética do telhado e da chaminé 
-        harmonizada. Ele pode ser projetado para se encaixar perfeitamente ao redor da chaminé, criando um acabamento limpo 
-        e profissional.
-        É importante observar que as especificidades do colarinho podem variar dependendo do tipo de churrasqueira, 
-        do material do telhado e da chaminé, bem como das preferências individuais. Recomenda-se consultar um profissional 
-        especializado em telhados ou churrasqueiras para garantir a escolha adequada do colarinho e uma instalação correta.
-        </MessageText>
+            <TittleTopic>Recomendações</TittleTopic>
+            <MessageText>
+            O colarinho é colocado em torno da chaminé para proteger a passagem de água/infiltração do telhado e  
+            proporcionar uma aparência esteticamente agradável. Geralmente, é feito de materiais duráveis e resistentes às 
+            intempéries, como metal ou plástico resistente ao UV.
+            Ao instalar o colarinho no telhado, é importante garantir uma vedação adequada. 
+            Isso pode ser feito utilizando selantes apropriados para telhados, como silicone ou mastique, criando assim, uma barreira
+            contra a entrada de água.
+            </MessageText>
+            <br />
+            <MessageText>
+            Além de fornecer proteção contra vazamentos, o colarinho também ajuda a manter a estética do telhado e da chaminé 
+            harmonizada. Ele pode ser projetado para se encaixar perfeitamente ao redor da chaminé, criando um acabamento limpo 
+            e profissional.
+            É importante observar que as especificidades do colarinho podem variar dependendo do tipo de churrasqueira, 
+            do material do telhado e da chaminé, bem como das preferências individuais. Para garantir a escolha adequada do 
+            colarinho e uma instalação correta, contate-nos.
+            </MessageText>
         </Topics>
         
     </Wrapper>    

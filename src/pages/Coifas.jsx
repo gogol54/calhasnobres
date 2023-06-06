@@ -85,10 +85,12 @@ const content = (
   <Container>
     <Title>Coifas</Title>
     <hr style={{border: '1px solid aquamarine'}}/>
-    <MessageText>
-    As coifas são dispositivos de ventilação instalados acima de fogões ou cooktops para extrair fumaça, odores e vapores
-    gerados durante o cozimento. Aqui estão algumas informações relevantes:
-    </MessageText>
+    <Topics>
+        <MessageText>
+        As coifas são dispositivos de ventilação instalados acima de fogões ou cooktops para extrair fumaça, odores e vapores
+        gerados durante o cozimento. Aqui estão algumas informações relevantes:
+        </MessageText>
+    </Topics>
     <Wrapper>
         <Topics>
             <TittleTopic>Utilidades que você precisa saber</TittleTopic>
@@ -116,7 +118,7 @@ const content = (
                     </li>
                     <li>
                     Considerações de instalação: A instalação adequada da coifa é crucial para garantir seu desempenho eficiente. É importante 
-                    seguir as instruções do fabricante e, se necessário, contratar um profissional qualificado para garantir que o 
+                    seguir as instruções do fabricante e, contratar nossos serviços para garantir que o 
                     sistema seja instalado corretamente.
                     </li>
                 </ul>
