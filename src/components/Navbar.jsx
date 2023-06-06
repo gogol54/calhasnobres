@@ -33,18 +33,11 @@ const Navbar = () => {
             <ul className="navbar-nav ml-auto">
               <li className="nav-item active">
                 <a className="nav-link" href="/">
-                <img 
-                    src='https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/THISOTHERONE.png?alt=media&token=0d70829d-9ca4-4fc4-bc87-a2f3ab0cc806' 
-                    width='30px' 
-                    height='20px'
-                    style={{marginRight: '5px'}}
-                />
+                
                     Página Inicial 
                 <span className="sr-only">(current)</span></a>
               </li>
-              <li className="nav-item active">
-                <a className="nav-link" href="/information">Quem somos</a>
-              </li>
+           
               <li className="nav-item dropdown active">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Serviços
@@ -63,6 +56,9 @@ const Navbar = () => {
               </li>
               <li className="nav-item active">
                 <a className="nav-link " href="/others">Saiba Mais</a>
+              </li>
+              <li className="nav-item active">
+                <a className="nav-link" href="/information">Quem somos</a>
               </li>
             </ul>
             
