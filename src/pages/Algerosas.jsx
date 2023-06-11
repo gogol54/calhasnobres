@@ -118,17 +118,17 @@ const content = (
             <MessageText>
                 <ul>
                     <li>
-                    Proteção contra intempéries: As algerosas ajudam a proteger as paredes internas do edifício, evitando que a 
+                    <span style={{color: 'aquamarine'}}>Proteção contra intempéries: </span>As algerosas ajudam a proteger as paredes internas do edifício, evitando que a 
                     água da chuva escorra diretamente sobre elas. Isso ajuda a prevenir a deterioração das paredes e a 
                     infiltração de água no interior da estrutura.
                     </li>
                     <li>
-                    Direcionamento da água: As algerosas também direcionam a água da chuva para longe da base do edifício. 
+                    <span style={{color: 'aquamarine'}}>Direcionamento da água:</span> As algerosas também direcionam a água da chuva para longe da base do edifício. 
                     Ajudando a evitar que a água se acumule próximo às fundações, o que pode levar a problemas de umidade
                     e danos estruturais.
                     </li>
                     <li>
-                    Estética: Além de suas funcionalidades práticas, as algerosas também têm um papel estético na arquitetura. 
+                    <span style={{color: 'aquamarine'}}>Estética:</span> Além de suas funcionalidades práticas, as algerosas também têm um papel estético na arquitetura. 
                     </li>
                 </ul>
             </MessageText>

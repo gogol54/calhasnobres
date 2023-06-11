@@ -101,12 +101,15 @@ const MessageText = styled.span`
 const ImageSlider = styled.img`
     object-fit: contain;
     margin: 10px;
-    width: 1024px;
+    width: 98% !important;
+    margin-left: 10px !important;
+    border-radius: 10px;
     height: 576px;
-    margin-left: 25px;
+    margin-left: -1px;
     @media (max-width: 540px) {
       width: 376px;
-      max-width: 85%;
+      margin-left: 5px;
+      max-width: 95%;
       height: 400px;
       z-index: -1;
     }
@@ -198,10 +201,10 @@ const handleClick = (id) => {
 
   const Item = (props) => {
     return (
-        <Paper style={{backgroundColor:'black', width: '95%'}} >
+        <Paper style={{backgroundColor:'black', width: '100%'}} >
             <ImageTitle>{props.item.name}</ImageTitle>
             <Description>{props.item.description}</Description>
-            <ImageSlider style={{objectFit: 'cover', width: '95%'}} src={props.item.image}/>
+            <ImageSlider style={{objectFit: 'cover', width: '100%'}} src={props.item.image}/>
             <Btn className="btn btn-warning" onClick={() => handleClick(props.item.name)}>
                 SAIBA MAIS
             </Btn>
@@ -211,13 +214,17 @@ const handleClick = (id) => {
   const content = (<>
   <Container>
     <div>
-        <Title>Calhas e Rufos, principais diferenças.</Title>
-        <MessageText>Entre todos os materias de construção civil que estão inclusos no telhado, Calhas e Rufos são os que mais 
-            merecem sua atenção, sabendo que são componentes essenciais para a seguração do seu telhado. E portanto, se estiver 
-            curioso sobre o que cada um significa, as definições resumidas seriam: Calhas são utilizadas como complemento do 
-            telhado, embora podem ser encontradas em outras regiões da cobertura, sua finalidade é escoar a água da chuva; Os 
-            Rufos são utilizados para encapamentos, vedação e como auxílio para escoar a água dos telhados. Da mesma forma, abaixo 
-            um pequeno video explicando a importância destes componentes e suas diferenças.
+        <Title>Calhas e Rufos: Principais diferenças.</Title>
+        <MessageText>
+            Entre todos os materiais de construção civil que estão incluídos no telhado, as calhas e os rufos são os que mais merecem 
+            sua atenção, pois são componentes essenciais para a segurança do seu telhado. Portanto, se você está curioso sobre o significado 
+            de cada um, aqui estão definições resumidas:
+
+            As calhas são utilizadas como complemento do telhado e podem ser encontradas em outras regiões da cobertura. 
+            Sua finalidade é escoar a água da chuva.
+
+            Os rufos são utilizados para revestimento, vedação e como auxílio para o escoamento da água dos telhados.
+            Abaixo, segue um pequeno vídeo explicando a importância desses componentes e suas diferenças.
         </MessageText>
         <center>
             <Iframe 
@@ -231,10 +238,15 @@ const handleClick = (id) => {
         <br />
     </div>
     <Legend>Conheça nossos serviços</Legend>
-        <Carousel style={{marginLeft: '200px'}}
-          NextIcon={<img width='20px' height='20px'
-            src="https://icons-for-free.com/iconfiles/png/512/next+right+icon-1320166862802397293.png"/>}
-          PrevIcon={<img width='20px' height='20px' src="https://prod.gusto-assets.com/wp-content/uploads/chevron-left-icon.png"/>}
+        <Carousel 
+          PrevIcon={<img width='20px' height='20px' src="https://prod.gusto-assets.com/wp-content/uploads/chevron-left-icon.png"
+          />}
+          NextIcon={
+            <img
+              width='20px' 
+              height='20px'
+              src="https://icons-for-free.com/iconfiles/png/512/next+right+icon-1320166862802397293.png"
+          />}
         >
             {
                 images.map( (item, i) => <Item key={i} item={item} /> )

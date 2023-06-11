@@ -119,17 +119,18 @@ const content = (
             <MessageText>
                 <ul>
                     <li>
-                        Coberturas: Selagem de buracos, troca de telhas, troca de coberturas, limpeza de telhados em geral.
+                    <span style={{color: 'aquamarine'}}>Coberturas: </span> Selagem de buracos, troca de telhas, troca de coberturas, limpeza de telhados em geral.
                     </li>
                     <li>
-                        Calhas: Selagem de goteiras, limpeza de filtros, remoção folhas e demais sujeiras causadas
+                    <span style={{color: 'aquamarine'}}>Calhas:</span> Selagem de goteiras, limpeza de filtros, remoção folhas e demais sujeiras causadas
                         pelos temporais.
                     </li>
                     <li>
-                        Algerosas: Manutenção geral para evitar goteiras e umidade na sua casa.
+                    <span style={{color: 'aquamarine'}}>Algerosas:</span> Manutenção geral para evitar goteiras e umidade na sua casa.
                     </li>
                     <li>
-                        Chaminés: Remoção de sujeiras que podem causar mais dano na atmosfera. 
+                    <span style={{color: 'aquamarine'}}>Chaminés:</span> Remoção de sujeiras que podem causar mais dano ao meio ambiente, 
+                    como por exemplo carvão ativado que fica no bocal da chaminé. 
                     </li>
                 </ul>
             </MessageText>

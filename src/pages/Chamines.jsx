@@ -98,37 +98,38 @@ const content = (
             <TittleTopic>Principais definições</TittleTopic>
             <MessageText>
                 <ul>
-                    <li>Exaustão de gases de combustão: A função primordial de uma chaminé é proporcionar uma saída segura 
-                        e eficiente para os gases de combustão resultantes da queima de materiais, como lenha, carvão, gás 
-                        ou óleo. Ela permite que os gases sejam liberados para fora da estrutura, evitando sua acumulação no 
-                        ambiente interno.
+                    <li>
+                    <span style={{color: 'aquamarine'}}>Exaustão de gases de combustão:</span> A função primordial de uma chaminé é proporcionar uma saída segura 
+                    e eficiente para os gases de combustão resultantes da queima de materiais, como lenha, carvão, gás 
+                    ou óleo. Ela permite que os gases sejam liberados para fora da estrutura, evitando sua acumulação no 
+                    ambiente interno.
                     </li>
                     <li>
-                    Ventilação: Além de exaurir os gases de combustão, a chaminé também promove a ventilação adequada do 
+                    <span style={{color: 'aquamarine'}}>Ventilação:</span> Além de exaurir os gases de combustão, a chaminé também promove a ventilação adequada do 
                     ambiente. Ela ajuda a eliminar fumaça, vapores, odores e outros poluentes gerados durante o processo 
                     de queima, mantendo o ar interno limpo e saudável.
                     </li>
                     <li>
-                    Prevenção de incêndios: Uma chaminé adequadamente projetada ajuda a prevenir incêndios. 
+                    <span style={{color: 'aquamarine'}}>Prevenção de incêndios:</span> Uma chaminé adequadamente projetada ajuda a prevenir incêndios. 
                     Ela direciona os gases quentes para fora do ambiente, reduzindo o risco de ignição de materiais 
                     inflamáveis próximos à fonte de calor.
                     </li>
                     <li>
-                    Proteção da estrutura: A chaminé desempenha um papel importante na proteção da estrutura da edificação.
+                    <span style={{color: 'aquamarine'}}>Proteção da estrutura:</span> A chaminé desempenha um papel importante na proteção da estrutura da edificação.
                     Ela permite a liberação de calor e gases tóxicos gerados pela queima de combustíveis, evitando o acúmulo 
                     e a corrosão desses elementos nas estruturas internas, como paredes e telhados.
                     </li>
                     <li>
-                    Controle de temperatura: A chaminé auxilia no controle da temperatura do ambiente. Ela permite a 
+                    <span style={{color: 'aquamarine'}}>Controle de temperatura:</span> A chaminé auxilia no controle da temperatura do ambiente. Ela permite a 
                     saída de ar quente, ajudando a regular a temperatura interna e proporcionando conforto térmico.
                     </li>
                     <li>
-                    Eficiência energética: Uma chaminé bem projetada e construída contribui para a eficiência energética. 
+                    <span style={{color: 'aquamarine'}}>Eficiência energética:</span> Uma chaminé bem projetada e construída contribui para a eficiência energética. 
                     Ela permite a retirada adequada dos gases de combustão, aumentando a eficiência da queima e reduzindo o 
                     desperdício de energia.
                     </li>
                     <li>
-                    Segurança: A presença de uma chaminé segura e em bom estado de conservação é essencial para garantir a 
+                    <span style={{color: 'aquamarine'}}>Segurança: </span>A presença de uma chaminé segura e em bom estado de conservação é essencial para garantir a 
                     segurança das pessoas e das estruturas. Ela evita a entrada de gases tóxicos no ambiente interno, 
                     minimizando os riscos à saúde e promovendo a segurança geral do local.
                     </li>

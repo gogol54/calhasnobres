@@ -97,27 +97,27 @@ const content = (
             <MessageText>
                 <ul>
                     <li>
-                    Funcionalidade: As coifas são projetadas para capturar e filtrar efetivamente a fumaça, gordura, odores 
+                    <span style={{color: 'aquamarine'}}>Funcionalidade:</span> As coifas são projetadas para capturar e filtrar efetivamente a fumaça, gordura, odores 
                     e vapores gerados durante o cozimento. Elas contêm um sistema de exaustão que 
                     remove esses elementos do ar, mantendo o ambiente da cozinha mais limpo e livre de odores indesejados.
                     </li>
                     <li>
-                    Tipos de coifas: Existem diferentes tipos de coifas disponíveis, incluindo coifas de parede, coifas de ilha 
+                    <span style={{color: 'aquamarine'}}>Tipos de coifas:</span> Existem diferentes tipos de coifas disponíveis, incluindo coifas de parede, coifas de ilha 
                     (suspensas do teto), coifas embutidas e coifas de bancada. Cada tipo é adequado para diferentes
                     configurações de cozinha e necessidades específicas.
                     </li>
                     <li>
-                    Componentes: As coifas geralmente incluem um duto de exaustão para transportar os vapores para fora da 
+                    <span style={{color: 'aquamarine'}}>Componentes:</span> As coifas geralmente incluem um duto de exaustão para transportar os vapores para fora da 
                     cozinha, um ventilador para aspirar o ar, filtros (como filtros de gordura e filtros de carvão ativado) 
                     para remover impurezas e um sistema de controle para ajustar a velocidade do ventilador e a iluminação.
                     </li>
                     <li>
-                    Vantagens: O uso de uma coifa traz várias vantagens, como a melhoria da qualidade do ar na cozinha,
+                    <span style={{color: 'aquamarine'}}>Vantagens:</span> O uso de uma coifa traz várias vantagens, como a melhoria da qualidade do ar na cozinha,
                     a remoção eficiente de odores de alimentos, a prevenção do acúmulo de gordura nas superfícies da 
                     cozinha e a redução da condensação e do mofo nas paredes e móveis próximos ao fogão.
                     </li>
                     <li>
-                    Considerações de instalação: A instalação adequada da coifa é crucial para garantir seu desempenho eficiente. É importante 
+                    <span style={{color: 'aquamarine'}}>Considerações de instalação:</span> A instalação adequada da coifa é crucial para garantir seu desempenho eficiente. É importante 
                     seguir as instruções do fabricante e, contratar nossos serviços para garantir que o 
                     sistema seja instalado corretamente.
                     </li>

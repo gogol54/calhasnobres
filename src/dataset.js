@@ -147,6 +147,10 @@ export const data = [
         names: ['chamines'],
         images: [
             [
+                'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/c2.jpg?alt=media&token=55b6452c-20ed-4d30-8391-b07218ca7219&_gl=1*1mn5y8b*_ga*NDk0NzQ0NDU1LjE2ODQzNDYwNTU.*_ga_CW55HF8NVT*MTY4NjQ5NDUzNi4xNy4xLjE2ODY0OTQ5NTAuMC4wLjA.',
+                'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/c1.jpg?alt=media&token=b3dd5fca-bb0d-43be-ab75-da78be49e4c2&_gl=1*unkmus*_ga*NDk0NzQ0NDU1LjE2ODQzNDYwNTU.*_ga_CW55HF8NVT*MTY4NjQ5NDUzNi4xNy4xLjE2ODY0OTQ5NDIuMC4wLjA.'
+            ],
+            [
                 'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/calhas%2Fchamin%C3%A9s.jpeg?alt=media&token=e5b3e922-408d-481e-94f7-149ea9fd3a8c',
             ],    
         ]
@@ -224,6 +228,12 @@ export const data = [
             [   
                 'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/coberturas%2FT3.jpeg?alt=media&token=bd0e2147-2d5d-43c6-b54e-7b3587026b07',
                 'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/coberturas%2FT4.jpeg?alt=media&token=60b1cfc3-d8c8-40ed-8300-adb91f5a800e',
+            ],
+            [   
+                'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/coberturas%2Ftelhado11.jpg?alt=media&token=71039f5a-11c7-43f2-87e1-40f48c13c4a9&_gl=1*zrtryg*_ga*NDk0NzQ0NDU1LjE2ODQzNDYwNTU.*_ga_CW55HF8NVT*MTY4NjQ5NDUzNi4xNy4xLjE2ODY0OTQ4MDQuMC4wLjA.',
+                'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/coberturas%2Ftelhado22.jpg?alt=media&token=38a316c5-e399-413d-ae04-ad48b6e55439&_gl=1*2ozsvf*_ga*NDk0NzQ0NDU1LjE2ODQzNDYwNTU.*_ga_CW55HF8NVT*MTY4NjQ5NDUzNi4xNy4xLjE2ODY0OTQ4MTAuMC4wLjA.',
+                'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/coberturas%2Ftelhado32.jpg?alt=media&token=71594a63-3a41-482a-9f21-a6e64f4bf3f3&_gl=1*cvkc7x*_ga*NDk0NzQ0NDU1LjE2ODQzNDYwNTU.*_ga_CW55HF8NVT*MTY4NjQ5NDUzNi4xNy4xLjE2ODY0OTQ4NTYuMC4wLjA.',
+                'https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/coberturas%2Ftelhado33.jpg?alt=media&token=1f1e4b01-9693-40d1-9510-95b063acd625&_gl=1*qnfbvf*_ga*NDk0NzQ0NDU1LjE2ODQzNDYwNTU.*_ga_CW55HF8NVT*MTY4NjQ5NDUzNi4xNy4xLjE2ODY0OTQ4NjAuMC4wLjA.'
             ]
         ]
     }, 

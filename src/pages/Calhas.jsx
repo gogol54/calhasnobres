@@ -32,6 +32,7 @@ const Container = styled.div`
 const Title = styled.h2`
   margin: '10px';
   margin-left: 40px;
+  color: white;
   font-family: 'Red Hat Display', sans-serif;
   font-weight: 300;
   @media (max-width: 540px) {
@@ -93,17 +94,17 @@ const content = (
             diferentes materiais, formatos e tamanhos. A seguir, alguns dos tipos mais comuns:
             <ul>
                 <li>
-                Calhas de alumínio: São fabricadas em alumínio, um material leve, resistente à corrosão e durável. As calhas de alumínio 
+                <span style={{color: 'aquamarine'}}>Calhas de alumínio:</span> São fabricadas em alumínio, um material leve, resistente à corrosão e durável. As calhas de alumínio 
                 são populares devido à sua baixa manutenção e longa vida útil. Elas estão disponíveis em diferentes cores e podem
                 ser pintadas para combinar com a estética da sua casa.
                 </li>
                 <li>
-                Calhas de zinco: As calhas de zinco são resistentes a solda, seguras, de baixa manutenção e custo acessível. São 
+                <span style={{color: 'aquamarine'}}>Calhas de zinco:</span> As calhas de zinco são resistentes a solda, seguras, de baixa manutenção e custo acessível. São 
                 comumente adotadas em cidades que não possuem mar, justamente em razão da maresia, pois esta afeta diretamente 
                 na longevidade do material, criando corrosões e demais problemas.
                 </li>
                 <li>
-                Calha galvalume nacional: O tipo de aço galvalume é atualmente um dos melhores materiais para este segmento, 
+                <span style={{color: 'aquamarine'}}>Calha galvalume nacional:</span> O tipo de aço galvalume é atualmente um dos melhores materiais para este segmento, 
                 dito isto em razão de ser composto por aproximadamente 45% zinco, e os outros 55% sendo fabricados de alumínio e silício,
                 ou seja, substâncias de estabilidade eminente, o que garante uma ampla longevidade para suas calhas.
                 Enfim, material excelente contra corrosões.
@@ -123,28 +124,28 @@ const content = (
                     calha, seriam:
                     <ul>
                         <li>
-                        Material: Considere os diferentes materiais disponíveis,alumínio, zinco, galvalume e outros, avalie
+                        <span style={{color: 'aquamarine'}}>Material:</span> Considere os diferentes materiais disponíveis,alumínio, zinco, galvalume e outros, avalie
                         suas propriedades, durabilidade, resistência à corrosão e estética. Cada material tem suas 
                         vantagens e desvantagens, por isso é importante pesquisar e determinar qual se adapta melhor às suas 
                         necessidades.
                         </li>
                         <li>
-                        Clima: Leve em consideração as condições climáticas da sua região. Se você mora em uma área com fortes
+                        <span style={{color: 'aquamarine'}}>Clima:</span> Leve em consideração as condições climáticas da sua região. Se você mora em uma área com fortes
                         chuvas, neve ou ventos intensos, pode ser necessário escolher um material resistente e durável, como 
                         galvalume, comprovadamente melhor que o aço galvanizado. Além disso, certifique-se de que a
                         calha escolhida tenha a capacidade de lidar com a quantidade de água esperada durante as chuvas.
                         </li>
                         <li>
-                        Estilo arquitetônico: Considere o estilo do edifício. Algumas calhas são mais adequadas para edifícios 
+                        <span style={{color: 'aquamarine'}}>Estilo arquitetônico:</span> Considere o estilo do edifício. Algumas calhas são mais adequadas para edifícios 
                         modernos, enquanto outras combinam melhor com construções mais tradicionais.
                         </li>
                         <li>
-                        Manutenção: Avalie a quantidade de manutenção necessária para cada tipo de calha. Algumas calhas exigem
+                        <span style={{color: 'aquamarine'}}>Manutenção:</span> Avalie a quantidade de manutenção necessária para cada tipo de calha. Algumas calhas exigem
                         limpeza regular e manutenção para garantir seu bom funcionamento, enquanto outras são mais autolimpantes
                         e exigem menos cuidados.
                         </li>
                         <li>
-                        Orçamento: Considere o seu orçamento disponível. Alguns materiais tendem a ser mais 
+                        <span style={{color: 'aquamarine'}}>Orçamento:</span> Considere o seu orçamento disponível. Alguns materiais tendem a ser mais 
                         caros do que outros. Pondere o custo em relação à durabilidade e à estética desejada.
                         </li>
                     </ul>

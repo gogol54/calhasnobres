@@ -1,9 +1,9 @@
+import { useCallback } from "react"
 import styled from 'styled-components'
 import {
   Room, 
   LocationCity, 
 } from '@mui/icons-material'
-
 
 const ContactItem = styled.div`
   display:flex;
@@ -37,6 +37,7 @@ const Logo = styled.img`
 
 `
 const Footer = () => {
+
   const content = (<>
     <footer className="text-center text-lg-start text-muted" style={{backgroundColor:'#221F20'}}>
       <section className="d-flex justify-content-center justify-content-lg-between p-2" style={{backgroundColor:'white', marginBottom:'0px'}}>
