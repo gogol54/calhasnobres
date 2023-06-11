@@ -33,8 +33,8 @@ const Container = styled.div`
   }
   @media (max-width: 540px) {
     margin-left: 60px;
-    width: 85%;
-    max-width: 85%;
+    width: 80%;
+    max-width: 80%;
     height: auto;
   }
 `
@@ -88,7 +88,8 @@ const MiniAnimation = styled.div`
 
 const Legend = styled.h4`
   margin: '10px';
-  margin-left: 40px;
+  margin-left: 20px;
+  margin-top: 20px;
   font-family: 'Red Hat Display', sans-serif;
   font-weight: 300;
 `

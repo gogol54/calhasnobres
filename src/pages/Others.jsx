@@ -78,7 +78,7 @@ const MessageInner = styled.span`
   font-weight: bold;
   @media (max-width: 540px){
     left: 23px;
-    margin-top: -90px;
+    margin-top: -140px;
     width: 100%;
     margin-left: 40px;
     font-weight: 300;
