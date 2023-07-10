@@ -47,8 +47,8 @@ const TittleTopic = styled.h4`
   color: aquamarine;
   margin: 20px;
   @media (max-width: 540px) {
-        text-align: center;
-    }
+    text-align: center;
+  }
 `
 const MessageText = styled.span`
   font-size: 18px;
@@ -62,23 +62,23 @@ const Topics = styled.div`
   flex: 1;
 `
 const Wrapper = styled.div`
-    display: flex;
-    flex-direction: inline;
-    margin-top: 10px;
-    @media (max-width: 920px) and (min-width: 550px)  {
-        flex-direction: column;
-    }
-    @media (max-width: 540px) {
-        flex-direction: column;
-    }
+  display: flex;
+  flex-direction: inline;
+  margin-top: 10px;
+  @media (max-width: 920px) and (min-width: 550px)  {
+    flex-direction: column;
+  }
+  @media (max-width: 540px) {
+    flex-direction: column;
+  }
 `
 const Links = styled.a`
-    color: aquamarine;
+  color: aquamarine;
+  text-decoration: none;
+  &:hover{
+    color: #c7c7c7;
     text-decoration: none;
-    &:hover{
-        color: #c7c7c7;
-        text-decoration: none;
-    }
+  }
 `
 
 const content = (
@@ -86,59 +86,57 @@ const content = (
     <Title>Chaminés</Title>
     <hr style={{border: '1px solid aquamarine'}}/>
     <Topics>
-        <MessageText>
-        A chaminé é uma estrutura vertical projetada para a exaustão de gases de combustão, fumaça, vapores ou outros subprodutos 
-        resultantes da queima de materiais. Elas são comumente encontradas em casas, edifícios comerciais e industriais para 
-        fornecer uma saída segura para os produtos da combustão. A chaminé possui várias funcionalidades importantes,
-        e abaixo, uma lista para melhor entendimento:
-        </MessageText>
+      <MessageText>
+      A chaminé é uma estrutura vertical projetada para a exaustão de gases de combustão, fumaça, vapores ou outros subprodutos 
+      resultantes da queima de materiais. Elas são comumente encontradas em casas, edifícios comerciais e industriais para 
+      fornecer uma saída segura para os produtos da combustão. A chaminé possui várias funcionalidades importantes,
+      e abaixo, uma lista para melhor entendimento:
+      </MessageText>
     </Topics>
     <Wrapper>
-        <Topics>
-            <TittleTopic>Principais definições</TittleTopic>
-            <MessageText>
-                <ul>
-                    <li>
-                    <span style={{color: 'aquamarine'}}>Exaustão de gases de combustão:</span> A função primordial de uma chaminé é proporcionar uma saída segura 
-                    e eficiente para os gases de combustão resultantes da queima de materiais, como lenha, carvão, gás 
-                    ou óleo. Ela permite que os gases sejam liberados para fora da estrutura, evitando sua acumulação no 
-                    ambiente interno.
-                    </li>
-                    <li>
-                    <span style={{color: 'aquamarine'}}>Ventilação:</span> Além de exaurir os gases de combustão, a chaminé também promove a ventilação adequada do 
-                    ambiente. Ela ajuda a eliminar fumaça, vapores, odores e outros poluentes gerados durante o processo 
-                    de queima, mantendo o ar interno limpo e saudável.
-                    </li>
-                    <li>
-                    <span style={{color: 'aquamarine'}}>Prevenção de incêndios:</span> Uma chaminé adequadamente projetada ajuda a prevenir incêndios. 
-                    Ela direciona os gases quentes para fora do ambiente, reduzindo o risco de ignição de materiais 
-                    inflamáveis próximos à fonte de calor.
-                    </li>
-                    <li>
-                    <span style={{color: 'aquamarine'}}>Proteção da estrutura:</span> A chaminé desempenha um papel importante na proteção da estrutura da edificação.
-                    Ela permite a liberação de calor e gases tóxicos gerados pela queima de combustíveis, evitando o acúmulo 
-                    e a corrosão desses elementos nas estruturas internas, como paredes e telhados.
-                    </li>
-                    <li>
-                    <span style={{color: 'aquamarine'}}>Controle de temperatura:</span> A chaminé auxilia no controle da temperatura do ambiente. Ela permite a 
-                    saída de ar quente, ajudando a regular a temperatura interna e proporcionando conforto térmico.
-                    </li>
-                    <li>
-                    <span style={{color: 'aquamarine'}}>Eficiência energética:</span> Uma chaminé bem projetada e construída contribui para a eficiência energética. 
-                    Ela permite a retirada adequada dos gases de combustão, aumentando a eficiência da queima e reduzindo o 
-                    desperdício de energia.
-                    </li>
-                    <li>
-                    <span style={{color: 'aquamarine'}}>Segurança: </span>A presença de uma chaminé segura e em bom estado de conservação é essencial para garantir a 
-                    segurança das pessoas e das estruturas. Ela evita a entrada de gases tóxicos no ambiente interno, 
-                    minimizando os riscos à saúde e promovendo a segurança geral do local.
-                    </li>
-                </ul>
-            </MessageText>
-        </Topics>
+      <Topics>
+        <TittleTopic>Principais definições</TittleTopic>
+        <MessageText>
+          <ul>
+            <li>
+              <span style={{color: 'aquamarine'}}>Exaustão de gases de combustão:</span> A função primordial de uma chaminé é proporcionar uma saída segura 
+              e eficiente para os gases de combustão resultantes da queima de materiais, como lenha, carvão, gás 
+              ou óleo. Ela permite que os gases sejam liberados para fora da estrutura, evitando sua acumulação no 
+              ambiente interno.
+            </li>
+            <li>
+              <span style={{color: 'aquamarine'}}>Ventilação:</span> Além de exaurir os gases de combustão, a chaminé também promove a ventilação adequada do 
+              ambiente. Ela ajuda a eliminar fumaça, vapores, odores e outros poluentes gerados durante o processo 
+              de queima, mantendo o ar interno limpo e saudável.
+            </li>
+            <li>
+              <span style={{color: 'aquamarine'}}>Prevenção de incêndios:</span> Uma chaminé adequadamente projetada ajuda a prevenir incêndios. 
+              Ela direciona os gases quentes para fora do ambiente, reduzindo o risco de ignição de materiais 
+              inflamáveis próximos à fonte de calor.
+            </li>
+            <li>
+              <span style={{color: 'aquamarine'}}>Proteção da estrutura:</span> A chaminé desempenha um papel importante na proteção da estrutura da edificação.
+              Ela permite a liberação de calor e gases tóxicos gerados pela queima de combustíveis, evitando o acúmulo 
+              e a corrosão desses elementos nas estruturas internas, como paredes e telhados.
+            </li>
+            <li>
+              <span style={{color: 'aquamarine'}}>Controle de temperatura:</span> A chaminé auxilia no controle da temperatura do ambiente. Ela permite a 
+              saída de ar quente, ajudando a regular a temperatura interna e proporcionando conforto térmico.
+            </li>
+            <li>
+              <span style={{color: 'aquamarine'}}>Eficiência energética:</span> Uma chaminé bem projetada e construída contribui para a eficiência energética. 
+              Ela permite a retirada adequada dos gases de combustão, aumentando a eficiência da queima e reduzindo o 
+              desperdício de energia.
+            </li>
+            <li>
+              <span style={{color: 'aquamarine'}}>Segurança: </span>A presença de uma chaminé segura e em bom estado de conservação é essencial para garantir a 
+              segurança das pessoas e das estruturas. Ela evita a entrada de gases tóxicos no ambiente interno, 
+              minimizando os riscos à saúde e promovendo a segurança geral do local.
+            </li>
+          </ul>
+        </MessageText>
+      </Topics>
     </Wrapper>
-    
-
   </Container>)
 const Chamines = () => {
   const flag = 'Chamines'
@@ -146,8 +144,8 @@ const Chamines = () => {
   <div style={{backgroundColor: '#211F20'}}>
     <Navbar /> 
     <Sidebar />
-      {content}
-      <Product data={data} flag={flag}/>
+    {content}
+    <Product data={data} flag={flag}/>
     <Footer />
   </div>
   )

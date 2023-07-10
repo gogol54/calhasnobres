@@ -47,8 +47,8 @@ const TittleTopic = styled.h4`
   color: aquamarine;
   margin: 20px;
   @media (max-width: 540px) {
-        text-align: center;
-    }
+    text-align: center;
+  }
 `
 const MessageText = styled.span`
   font-size: 18px;
@@ -56,7 +56,6 @@ const MessageText = styled.span`
   font-weight: 300;
   max-width: 100%;
   @media (max-width: 540px) {
-
   }
 `
 
@@ -66,102 +65,102 @@ const Topics = styled.div`
   flex: 2;
 `
 const Wrapper = styled.div`
-    display: flex;
-    flex-direction: inline;
-    margin-top: 10px;
-    @media (max-width: 920px) and (min-width: 550px)  {
-        flex-direction: column;
-    }
-    @media (max-width: 540px) {
-        flex-direction: column;
-    }
+  display: flex;
+  flex-direction: inline;
+  margin-top: 10px;
+  @media (max-width: 920px) and (min-width: 550px)  {
+    flex-direction: column;
+  }
+  @media (max-width: 540px) {
+    flex-direction: column;
+  }
 `
 const content = (
   <Container>
-    <Title> 
-        Rufos <span style={{fontSize: '24px'}}></span> 
-    </Title> 
+    <Title> Rufos <span style={{fontSize: '24px'}}></span> </Title> 
     <hr style={{border: '1px solid aquamarine'}}/>
     <div>
+      <Topics>
+        <MessageText>
+        Os rufos são elementos essenciais na construção civil, especialmente em coberturas e paredes, que desempenham várias funções
+        importantes. Aqui estão algumas informações sobre as funcionalidades, características e razões para a adoção dos rufos.
+        </MessageText>
+      </Topics>
+
+      <Wrapper>
         <Topics>
+            <TittleTopic>Funcionalidades </TittleTopic>
             <MessageText>
-            Os rufos são elementos essenciais na construção civil, especialmente em coberturas e paredes, que desempenham várias funções
-            importantes. Aqui estão algumas informações sobre as funcionalidades, características e razões para a adoção dos rufos.
+              <ul>
+                <li>
+                  <span style={{color: 'aquamarine'}}>Proteção contra infiltrações:</span> Os rufos são instalados em locais onde há encontros de elementos construtivos, como telhados, paredes e chaminés.
+                  Sua principal função é evitar a entrada de água da chuva e prevenir infiltrações, direcionando a água para fora 
+                  da construção.
+                </li>
+                <li>
+                  <span style={{color: 'aquamarine'}}>Direcionamento da água:</span> Os rufos atuam como condutores de água, coletando e direcionando-a para calhas,
+                  condutores pluviais ou sistemas de drenagem, evitando que a água escorra pelas paredes e cause danos estruturais.
+                </li>
+                <li>
+                  <span style={{color: 'aquamarine'}}>Proteção contra umidade:</span> Ao evitar que a água penetre nas estruturas, os rufos contribuem para a prevenção de 
+                  problemas de umidade, como mofo, fungos e deterioração da estrutura.
+                </li>
+                <li>
+                  <span style={{color: 'aquamarine'}}>Estética e acabamento:</span> Além de sua função prática, os rufos também têm um papel estético na construção,
+                  proporcionando um acabamento visualmente agradável nas áreas de encontro entre diferentes elementos.
+                </li>
+              </ul>
             </MessageText>
         </Topics>
-        <Wrapper>
-            <Topics>
-                <TittleTopic>Funcionalidades </TittleTopic>
-                <MessageText>
-                <ul>
-                    <li>
-                    <span style={{color: 'aquamarine'}}>Proteção contra infiltrações:</span> Os rufos são instalados em locais onde há encontros de elementos construtivos, como telhados, paredes e chaminés.
-                    Sua principal função é evitar a entrada de água da chuva e prevenir infiltrações, direcionando a água para fora 
-                    da construção.
-                    </li>
-                    <li>
-                    <span style={{color: 'aquamarine'}}>Direcionamento da água:</span> Os rufos atuam como condutores de água, coletando e direcionando-a para calhas,
-                    condutores pluviais ou sistemas de drenagem, evitando que a água escorra pelas paredes e cause danos estruturais.
-                    </li>
-                    <li>
-                    <span style={{color: 'aquamarine'}}>Proteção contra umidade:</span> Ao evitar que a água penetre nas estruturas, os rufos contribuem para a prevenção de 
-                    problemas de umidade, como mofo, fungos e deterioração da estrutura.
-                    </li>
-                    <li>
-                    <span style={{color: 'aquamarine'}}>Estética e acabamento:</span> Além de sua função prática, os rufos também têm um papel estético na construção,
-                    proporcionando um acabamento visualmente agradável nas áreas de encontro entre diferentes elementos.
-                    </li>
-                </ul>
-                </MessageText>
-            
-            </Topics>
-            <Topics>
-                <TittleTopic>Características </TittleTopic>
-                <MessageText>
-                <ul>
-                    <li>
-                    <span style={{color: 'aquamarine'}}>Materiais:</span> Os rufos podem ser fabricados em diversos materiais, como alumínio, aço galvanizado, zinco, PVC e galvalume. 
-                    A escolha do material depende das necessidades específicas do projeto, considerando fatores como durabilidade,
-                    resistência à corrosão e estética desejada.
-                    </li>
-                    <li>
-                    <span style={{color: 'aquamarine'}}>Formatos e tamanhos:</span> Os rufos podem ter diferentes formatos e tamanhos, adaptando-se às características do 
-                    local de instalação. Por exemplo, existem rufos retos, curvos e em forma de L, cada um adequado para uma aplicação específica.
-                    </li>
-                </ul>
-                    
-                </MessageText>
-            </Topics>
-        </Wrapper>
+
         <Topics>
-            <TittleTopic>Razões para a adoção dos rufos</TittleTopic>
-            <MessageText>
-                <ul>
-                    <li>
-                    <span style={{color: 'aquamarine'}}>Prevenção de danos:</span> A instalação adequada de rufos é crucial para prevenir danos causados pela água da chuva, 
-                    como infiltrações, umidade excessiva e deterioração das estruturas. Portanto, sua adoção é essencial para 
-                    garantir a durabilidade e integridade da construção.
-                    </li>
-                    <li>
-                    <span style={{color: 'aquamarine'}}>Manutenção da estética:</span> Os rufos contribuem para o acabamento estético da construção, proporcionando uma 
-                    transição suave entre diferentes elementos e evitando problemas visuais causados por manchas de água ou sujeira
-                    nas paredes.
-                    </li>
-                    <li>
-                    <span style={{color: 'aquamarine'}}>Cumprimento de normas e regulamentos:</span> Em muitas regiões, a instalação de rufos é exigida por códigos de
-                    construção e regulamentos para garantir a segurança e a qualidade das edificações.
-                    </li>
-                </ul>
-            Em resumo, os rufos desempenham um papel fundamental na proteção contra infiltrações, direcionamento adequado 
-            da água, prevenção de umidade e proporcionam acabamento estético nas construções. Sua adoção é crucial para 
-            garantir a durabilidade, segurança e integridade das estruturas. Recomenda-se sempre contar com profissionais 
-            especializados para a instalação correta dos rufos, levando em consideração as necessidades específicas
-            </MessageText>
+          <TittleTopic>Características </TittleTopic>
+          <MessageText>
+            <ul>
+              <li>
+                <span style={{color: 'aquamarine'}}>Materiais:</span> Os rufos podem ser fabricados em diversos materiais, como alumínio, aço galvanizado, zinco, PVC e galvalume. 
+                A escolha do material depende das necessidades específicas do projeto, considerando fatores como durabilidade,
+                resistência à corrosão e estética desejada.
+              </li>
+              <li>
+                <span style={{color: 'aquamarine'}}>Formatos e tamanhos:</span> Os rufos podem ter diferentes formatos e tamanhos, adaptando-se às características do 
+                local de instalação. Por exemplo, existem rufos retos, curvos e em forma de L, cada um adequado para uma aplicação específica.
+              </li>
+            </ul>
+          </MessageText>
         </Topics>
+      </Wrapper>
+
+      <Topics>
+        <TittleTopic>Razões para a adoção dos rufos</TittleTopic>
+        <MessageText>
+          <ul>
+            <li>
+              <span style={{color: 'aquamarine'}}>Prevenção de danos:</span> A instalação adequada de rufos é crucial para prevenir danos causados pela água da chuva, 
+              como infiltrações, umidade excessiva e deterioração das estruturas. Portanto, sua adoção é essencial para 
+              garantir a durabilidade e integridade da construção.
+            </li>
+            <li>
+              <span style={{color: 'aquamarine'}}>Manutenção da estética:</span> Os rufos contribuem para o acabamento estético da construção, proporcionando uma 
+              transição suave entre diferentes elementos e evitando problemas visuais causados por manchas de água ou sujeira
+              nas paredes.
+            </li>
+            <li>
+              <span style={{color: 'aquamarine'}}>Cumprimento de normas e regulamentos:</span> Em muitas regiões, a instalação de rufos é exigida por códigos de
+              construção e regulamentos para garantir a segurança e a qualidade das edificações.
+            </li>
+          </ul>
+          Em resumo, os rufos desempenham um papel fundamental na proteção contra infiltrações, direcionamento adequado 
+          da água, prevenção de umidade e proporcionam acabamento estético nas construções. Sua adoção é crucial para 
+          garantir a durabilidade, segurança e integridade das estruturas. Recomenda-se sempre contar com profissionais 
+          especializados para a instalação correta dos rufos, levando em consideração as necessidades específicas
+        </MessageText>
+      </Topics>
+      
     </div>
   </Container>)
 const Rufos = () => {
-    const flag = 'Rufos'
+  const flag = 'Rufos'
 	return (
 	<div style={{backgroundColor: '#211F20'}}>
     <Navbar /> 

@@ -100,159 +100,162 @@ const MessageText = styled.span`
   max-width: 100%;
 `
 const ImageSlider = styled.img`
-    object-fit: contain;
-    margin: 10px;
-    width: 98% !important;
-    margin-left: 10px !important;
-    border-radius: 10px;
-    height: 576px;
-    margin-left: -1px;
-    @media (max-width: 540px) {
-      width: 376px;
-      margin-left: 5px;
-      max-width: 95%;
-      height: 400px;
-      z-index: -1;
-    }
+  object-fit: contain;
+  margin: 10px;
+  width: 98% !important;
+  margin-left: 10px !important;
+  border-radius: 10px;
+  height: 576px;
+  margin-left: -1px;
+  @media (max-width: 540px) {
+    width: 376px;
+    margin-left: 5px;
+    max-width: 95%;
+    height: 400px;
+    z-index: -1;
+  }
 `
 const Btn = styled.button`
-    position: absolute;
-    float: relative;
+  position: absolute;
+  float: relative;
+  bottom: 20px;
+  left: 45%;
+  height: 40px;
+  width: 120px;
+  margin-top: 10px;
+  @media (max-width: 540px) {
+    z-index: 1000;
     bottom: 20px;
-    left: 45%;
+    left: 10%;
     height: 40px;
     width: 120px;
-    margin-top: 10px;
-    @media (max-width: 540px) {
-        z-index: 1000;
-        bottom: 20px;
-        left: 10%;
-        height: 40px;
-        width: 120px;
-    }
+  }
 `
 const ImageTitle = styled.h2`
-    position: absolute;
-    z-index: 1000;
-    top: 20px;
-    align-items: center;
-    justify-content: center;
-    text-shadow: 0px 0px 5px white;
-    font-family: 'Red Hat Display', sans-serif;
-    float: relative;
-    font-weight: bold;
-    color: black;
-    margin-left: 10%;
+  position: absolute;
+  z-index: 1000;
+  top: 20px;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0px 0px 5px white;
+  font-family: 'Red Hat Display', sans-serif;
+  float: relative;
+  font-weight: bold;
+  color: black;
+  margin-left: 10%;
 `
 const Description = styled.p`
+  position: absolute;
+  z-index: 1000;
+  bottom: 50px;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Red Hat Display', sans-serif;
+  float: relative;
+  font-weight: bold;
+  color: black;
+  text-shadow: 0px 0px 5px white;
+  background-color: transparent;
+  margin-left: 35%;
+  max-width: 30%;
+  @media (max-width: 540px) {
     position: absolute;
     z-index: 1000;
     bottom: 50px;
     align-items: center;
     justify-content: center;
     font-family: 'Red Hat Display', sans-serif;
-    float: relative;
-    font-weight: bold;
-    color: black;
+    margin-left: 10%;
+    max-width: 50%;
+    font-size: 14px;
     text-shadow: 0px 0px 5px white;
-    background-color: transparent;
-    margin-left: 35%;
-    max-width: 30%;
-    @media (max-width: 540px) {
-      position: absolute;
-      z-index: 1000;
-      bottom: 50px;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Red Hat Display', sans-serif;
-      margin-left: 10%;
-      max-width: 50%;
-      font-size: 14px;
-      text-shadow: 0px 0px 5px white;
-    }
+  }
 `
 const Iframe = styled.iframe`
   margin: 20px;
   border: 2px solid black;
   width: 756px; 
   height: 400px;
-    @media (max-width: 540px) {
-      width: 376px;
-      max-width: 85%;
-      height: 400px;
-    }
+  @media (max-width: 540px) {
+    width: 376px;
+    max-width: 85%;
+    height: 400px;
+  }
 `
 const Home = () => {
   const [pressed, onPressed] = useState(false) 
   const history = useNavigate()
-
   const sendRequest = (e) => {
     e.preventDefault()
     onPressed(!pressed)
 }
 const handleClick = (id) => {
-    console.log(id.toLowerCase())
-    if(('Chaminés').includes(id)){
-        history('/chamines')
-    } else{
-        history(`/${id.toLowerCase()}`)
-    }
-    
+  console.log(id.toLowerCase())
+  if(('Chaminés').includes(id)){
+    history('/chamines')
+  } else{
+    history(`/${id.toLowerCase()}`)
+  }
 }
 
   const Item = (props) => {
     return (
-        <Paper style={{backgroundColor:'black', width: '100%'}} >
-            <ImageTitle>{props.item.name}</ImageTitle>
-            <Description>{props.item.description}</Description>
-            <ImageSlider style={{objectFit: 'cover', width: '100%'}} src={props.item.image}/>
-            <Btn className="btn btn-warning" onClick={() => handleClick(props.item.name)}>
-                SAIBA MAIS
-            </Btn>
-        </Paper>
+      <Paper style={{backgroundColor:'black', width: '100%'}} >
+        <ImageTitle>{props.item.name}</ImageTitle>
+        <Description>{props.item.description}</Description>
+        <ImageSlider style={{objectFit: 'cover', width: '100%'}} src={props.item.image}/>
+        <Btn className="btn btn-warning" onClick={() => handleClick(props.item.name)}>
+          SAIBA MAIS
+        </Btn>
+      </Paper>
     )
   }
   const content = (<>
   <Container>
     <div>
-        <Title>Calhas e Rufos: Principais diferenças.</Title>
-        <MessageText>
-            Entre todos os materiais de construção civil que estão incluídos no telhado, as calhas e os rufos são os que mais merecem 
-            sua atenção, pois são componentes essenciais para a segurança do seu telhado. Portanto, se você está curioso sobre o significado 
-            de cada um, aqui estão definições resumidas:
+      <Title>Calhas e Rufos: Principais diferenças.</Title>
+      <MessageText>
+        Entre todos os materiais de construção civil que estão incluídos no telhado, as calhas e os rufos são os que mais merecem 
+        sua atenção, pois são componentes essenciais para a segurança do seu telhado. Portanto, se você está curioso sobre o significado 
+        de cada um, aqui estão definições resumidas:
 
-            As calhas são utilizadas como complemento do telhado e podem ser encontradas em outras regiões da cobertura. 
-            Sua finalidade é escoar a água da chuva.
+        As calhas são utilizadas como complemento do telhado e podem ser encontradas em outras regiões da cobertura. 
+        Sua finalidade é escoar a água da chuva.
 
-            Os rufos são utilizados para revestimento, vedação e como auxílio para o escoamento da água dos telhados.
-            Abaixo, segue um pequeno vídeo explicando a importância desses componentes e suas diferenças.
-        </MessageText>
-        <center>
-            <Iframe 
-                src="https://www.youtube.com/embed/fYBy_6dD9Os" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen>    
-            </Iframe>
-        </center>
-        <br />
+        Os rufos são utilizados para revestimento, vedação e como auxílio para o escoamento da água dos telhados.
+        Abaixo, segue um pequeno vídeo explicando a importância desses componentes e suas diferenças.
+      </MessageText>
+      <center>
+        <Iframe 
+          src="https://www.youtube.com/embed/fYBy_6dD9Os" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>    
+        </Iframe>
+      </center>
+      <br />
     </div>
+
     <Legend>Conheça nossos serviços</Legend>
-        <Carousel 
-          PrevIcon={<img width='20px' height='20px' src="https://prod.gusto-assets.com/wp-content/uploads/chevron-left-icon.png"
-          />}
-          NextIcon={
-            <img
-              width='20px' 
-              height='20px'
-              src="https://icons-for-free.com/iconfiles/png/512/next+right+icon-1320166862802397293.png"
-          />}
-        >
-            {
-                images.map( (item, i) => <Item key={i} item={item} /> )
-            }
-        </Carousel>
+    <Carousel 
+      PrevIcon={
+        <img 
+          width='20px' 
+          height='20px' 
+          src="https://prod.gusto-assets.com/wp-content/uploads/chevron-left-icon.png"
+      />}
+      NextIcon={
+        <img
+          width='20px' 
+          height='20px'
+          src="https://icons-for-free.com/iconfiles/png/512/next+right+icon-1320166862802397293.png"
+      />}
+    >
+      {
+        images.map( (item, i) => <Item key={i} item={item} /> )
+      }
+    </Carousel>
     <Legend>Solicitando nosso atendimento</Legend> 
     <Wrapper>
       <ShadowBox> 
@@ -263,16 +266,11 @@ const handleClick = (id) => {
                 fontSize:'60px',
                 marginTop: '10px', 
                 color: '#211F20'
-            }} />
+            }}/>
           </MiniAnimation> 
         </center> 
         <span style={{fontSize: '20px', color: 'white'}}>1° passo:</span> Agende uma visita através do whatsapp ou entre em contato ligando nos telefones que se encontram no rodapé.
       </ShadowBox>
-{/* 
-      <IconPosition>
-        <ArrowForward /> 
-      </IconPosition>
-       */}
       <ShadowBox> 
         <center>
           <MiniAnimation>
@@ -287,11 +285,7 @@ const handleClick = (id) => {
         </center>
         <span style={{fontSize: '20px', color: 'white'}}>2° passo: </span> Tenha alguém disponível para nos receber no horário combinado.
       </ShadowBox>
-      
-      {/* <IconPosition>
-        <ArrowForward />
-      </IconPosition>
-     */}
+
       <ShadowBox> 
         <center>
           <MiniAnimation>
@@ -305,24 +299,26 @@ const handleClick = (id) => {
           </MiniAnimation>
         </center>
         <span style={{fontSize: '20px', color: 'white'}}>3° passo: </span> Realizaremos todos os serviços solicitados que forem necessários na sua casa.
-      </ShadowBox>
+      </ShadowBox> 
     </Wrapper>
   </Container>
   </>)
+
   return (
     <div style={{backgroundColor: '#211F20'}}>
-    <Navbar /> 
+      <Navbar /> 
       <Sidebar />
       {content}
       <div className='container' style={{backgroundColor: '#fafafa'}}>
         <ChatBot>
           <a href="https://api.whatsapp.com/message/P47VSLNIJS2YG1?autoload=1&app_absent=0" className="me-4 text-reset">
-            <div className='btn btn-secondary' onChange={(e) => sendRequest(e)} style={{marginRight:'10px'}}>  <Lens fontSize='smaill' color='success'/> Contate-nos <Smartphone />
+            <div className='btn btn-secondary' onChange={(e) => sendRequest(e)} style={{marginRight:'10px'}}>  
+              <Lens fontSize='smaill' color='success'/> Contate-nos <Smartphone />
             </div>
           </a>
         </ChatBot>
       </div>
-    <Footer />
+      <Footer />
     </div>
   )
 }

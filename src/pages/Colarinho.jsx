@@ -47,8 +47,8 @@ const TittleTopic = styled.h4`
   color: aquamarine;
   margin: 20px;
   @media (max-width: 540px) {
-        text-align: center;
-    }
+    text-align: center;
+  }
 `
 const MessageText = styled.span`
   font-size: 18px;
@@ -62,23 +62,23 @@ const Topics = styled.div`
   flex: 1;
 `
 const Wrapper = styled.div`
-    display: flex;
-    flex-direction: inline;
-    margin-top: 10px;
-    @media (max-width: 920px) and (min-width: 550px)  {
-        flex-direction: column;
-    }
-    @media (max-width: 540px) {
-        flex-direction: column;
-    }
+  display: flex;
+  flex-direction: inline;
+  margin-top: 10px;
+  @media (max-width: 920px) and (min-width: 550px)  {
+    flex-direction: column;
+  }
+  @media (max-width: 540px) {
+    flex-direction: column;
+  }
 `
 const Links = styled.a`
-    color: aquamarine;
+  color: aquamarine;
+  text-decoration: none;
+  &:hover{
+    color: #c7c7c7;
     text-decoration: none;
-    &:hover{
-        color: #c7c7c7;
-        text-decoration: none;
-    }
+  }
 `
 
 const content = (
@@ -86,35 +86,35 @@ const content = (
     <Title> Colarinho </Title>
     <hr style={{border: '1px solid aquamarine'}}/>
     <Topics>
-        <MessageText>
-        Pode ser definico como sendo o acabamento utilizado no encontro entre o telhado e a chaminé de uma churrasqueira. 
-        O colarinho é uma peça que tem a função de fazer o acabamento estético e garantir a vedação adequada nessa área.
-        </MessageText>
+      <MessageText>
+      Pode ser definico como sendo o acabamento utilizado no encontro entre o telhado e a chaminé de uma churrasqueira. 
+      O colarinho é uma peça que tem a função de fazer o acabamento estético e garantir a vedação adequada nessa área.
+      </MessageText>
     </Topics>
     <Wrapper>
-        <Topics>
-            <TittleTopic>Recomendações</TittleTopic>
-            <MessageText>
-            O colarinho é colocado em torno da chaminé para proteger a passagem de água/infiltração do telhado e  
-            proporcionar uma aparência esteticamente agradável. Geralmente, é feito de materiais duráveis e resistentes às 
-            intempéries, como metal ou plástico resistente ao UV.
-            Ao instalar o colarinho no telhado, é importante garantir uma vedação adequada. 
-            Isso pode ser feito utilizando selantes apropriados para telhados, como silicone ou mastique, criando assim, uma barreira
-            contra a entrada de água.
-            </MessageText>
-            <br />
-            <MessageText>
-            Além de fornecer proteção contra vazamentos, o colarinho também ajuda a manter a estética do telhado e da chaminé 
-            harmonizada. Ele pode ser projetado para se encaixar perfeitamente ao redor da chaminé, criando um acabamento limpo 
-            e profissional.
-            É importante observar que as especificidades do colarinho podem variar dependendo do tipo de churrasqueira, 
-            do material do telhado e da chaminé, bem como das preferências individuais. Para garantir a escolha adequada do 
-            colarinho e uma instalação correta, contate-nos.
-            </MessageText>
-        </Topics>
-        
+      <Topics>
+        <TittleTopic>Recomendações</TittleTopic>
+        <MessageText>
+        O colarinho é colocado em torno da chaminé para proteger a passagem de água/infiltração do telhado e  
+        proporcionar uma aparência esteticamente agradável. Geralmente, é feito de materiais duráveis e resistentes às 
+        intempéries, como metal ou plástico resistente ao UV.
+        Ao instalar o colarinho no telhado, é importante garantir uma vedação adequada. 
+        Isso pode ser feito utilizando selantes apropriados para telhados, como silicone ou mastique, criando assim, uma barreira
+        contra a entrada de água.
+        </MessageText>
+        <br />
+        <MessageText>
+        Além de fornecer proteção contra vazamentos, o colarinho também ajuda a manter a estética do telhado e da chaminé 
+        harmonizada. Ele pode ser projetado para se encaixar perfeitamente ao redor da chaminé, criando um acabamento limpo 
+        e profissional.
+        É importante observar que as especificidades do colarinho podem variar dependendo do tipo de churrasqueira, 
+        do material do telhado e da chaminé, bem como das preferências individuais. Para garantir a escolha adequada do 
+        colarinho e uma instalação correta, contate-nos.
+        </MessageText>
+      </Topics>
     </Wrapper>    
   </Container>)
+  
 const Colarinho = () => {
   const flag = 'Colarinho'
   return (

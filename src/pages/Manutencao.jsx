@@ -47,8 +47,8 @@ const TittleTopic = styled.h4`
   color: aquamarine;
   margin: 20px;
   @media (max-width: 540px) {
-        text-align: center;
-    }
+    text-align: center;
+  }
 `
 const MessageText = styled.span`
   font-size: 18px;
@@ -62,23 +62,23 @@ const Topics = styled.div`
   flex: 1;
 `
 const Wrapper = styled.div`
-    display: flex;
-    flex-direction: inline;
-    margin-top: 10px;
-    @media (max-width: 920px) and (min-width: 550px)  {
-        flex-direction: column;
-    }
-    @media (max-width: 540px) {
-        flex-direction: column;
-    }
+  display: flex;
+  flex-direction: inline;
+  margin-top: 10px;
+  @media (max-width: 920px) and (min-width: 550px)  {
+    flex-direction: column;
+  }
+  @media (max-width: 540px) {
+    flex-direction: column;
+  }
 `
 const Links = styled.a`
-    color: aquamarine;
+  color: aquamarine;
+  text-decoration: none;
+  &:hover{
+    color: #c7c7c7;
     text-decoration: none;
-    &:hover{
-        color: #c7c7c7;
-        text-decoration: none;
-    }
+  }
 `
 const BoxToutchable = styled.div`
   background-color: #3d3c3d;
@@ -103,40 +103,40 @@ const BoxImage = styled.img`
 `
 
 const content = (
-    <Container>
+  <Container>
     <Title>Limpeza e Manutenção</Title>
     <hr style={{border: '1px solid aquamarine'}}/>
     <Topics>
-        <MessageText>
-        Você também pode contar com Calhas Nobres para garantir a manutenção das suas edificações, reforma de coberturas, 
-        selante para evitar vasamentos, limpeza de calhas, troca de componentes, enfim, todo e qualquer serviço qual disponibilizamos
-        também a instalação. abaixo encontra-se uma lista de todos os nossos serviços para fins de manutenção:
-        </MessageText>
+      <MessageText>
+      Você também pode contar com Calhas Nobres para garantir a manutenção das suas edificações, reforma de coberturas, 
+      selante para evitar vasamentos, limpeza de calhas, troca de componentes, enfim, todo e qualquer serviço qual disponibilizamos
+      também a instalação. abaixo encontra-se uma lista de todos os nossos serviços para fins de manutenção:
+      </MessageText>
     </Topics>
     <Wrapper>
-        <Topics>
-            <TittleTopic>Reformas</TittleTopic>
-            <MessageText>
-                <ul>
-                    <li>
-                    <span style={{color: 'aquamarine'}}>Coberturas: </span> Selagem de buracos, troca de telhas, troca de coberturas, limpeza de telhados em geral.
-                    </li>
-                    <li>
-                    <span style={{color: 'aquamarine'}}>Calhas:</span> Selagem de goteiras, limpeza de filtros, remoção folhas e demais sujeiras causadas
-                        pelos temporais.
-                    </li>
-                    <li>
-                    <span style={{color: 'aquamarine'}}>Algerosas:</span> Manutenção geral para evitar goteiras e umidade na sua casa.
-                    </li>
-                    <li>
-                    <span style={{color: 'aquamarine'}}>Chaminés:</span> Remoção de sujeiras que podem causar mais dano ao meio ambiente, 
-                    como por exemplo carvão ativado que fica no bocal da chaminé. 
-                    </li>
-                </ul>
-            </MessageText>
-        </Topics>
+      <Topics>
+        <TittleTopic>Reformas</TittleTopic>
+        <MessageText>
+          <ul>
+            <li>
+              <span style={{color: 'aquamarine'}}>Coberturas: </span> Selagem de buracos, troca de telhas, troca de coberturas, limpeza de telhados em geral.
+            </li>
+            <li>
+              <span style={{color: 'aquamarine'}}>Calhas:</span> Selagem de goteiras, limpeza de filtros, remoção folhas e demais sujeiras causadas
+              pelos temporais.
+            </li>
+            <li>
+              <span style={{color: 'aquamarine'}}>Algerosas:</span> Manutenção geral para evitar goteiras e umidade na sua casa.
+            </li>
+            <li>
+              <span style={{color: 'aquamarine'}}>Chaminés:</span> Remoção de sujeiras que podem causar mais dano ao meio ambiente, 
+              como por exemplo carvão ativado que fica no bocal da chaminé. 
+            </li>
+          </ul>
+        </MessageText>
+      </Topics>
     </Wrapper>
-    </Container>
+  </Container>
  )
 const Manutencao = () => {
   const flag='Manutencao'

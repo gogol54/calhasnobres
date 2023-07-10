@@ -86,16 +86,16 @@ const MessageInner = styled.span`
   }
 `
 const Wrapper = styled.div`
-    display: flex;
-    flex-direction: inline;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    @media (max-width: 920px) and (min-width: 550px)  {
-        flex-direction: column;
-    }
-    @media (max-width: 540px) {
-        flex-direction: column;
-    }
+  display: flex;
+  flex-direction: inline;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  @media (max-width: 920px) and (min-width: 550px)  {
+    flex-direction: column;
+  }
+  @media (max-width: 540px) {
+    flex-direction: column;
+  }
 `
 const Topics = styled.div`
   margin: 20px;
@@ -105,8 +105,8 @@ const TittleTopic = styled.h3`
   font-weight: 300;
   color: aquamarine;
   @media (max-width: 540px) {
-        text-align: center;
-    }
+    text-align: center;
+  }
 `
 const MessageText = styled.span`
   font-size: 18px;
@@ -116,13 +116,13 @@ const MessageText = styled.span`
 `
 
 const MessageTextAligned = styled.div`
-    margin: 20px;
-    max-width: 100%;
-    @media (max-width: 540px) {
-        margin-top: 640px;
-        font-size: 25px;
-        color: white;
-    }
+  margin: 20px;
+  max-width: 100%;
+  @media (max-width: 540px) {
+    margin-top: 640px;
+    font-size: 25px;
+    color: white;
+  }
 `
 const content = (
   <Container>
@@ -141,79 +141,82 @@ const content = (
       Entretanto, uma alternativa interessante que tem ganhado popularidade, é a adoção de um sistema de cisternas 
       para o reaproveitamento da água da chuva.
     </MessageInner>
-    <MessageTextAligned>
-        <TittleTopic>O que é uma Cisterna</TittleTopic>
-        <MessageText>
-            A cisterna é um tipo de sistema que capta a água através das calhas de chuva e reserva para fins domésticos,
-            de outra forma, um reservatório de água da chuva com baixo custo que serve para reuso. Atualmente, o uso destes 
-            sistemas tem ganhado espaço, justamente por ser uma alternativa eficaz ao considerar a obrigatoriedade da caixa
-            d'água em novas instalações (imóveis novos), uma cisterna garante de além de o reservatório a possibilidade de baixar
-            o custo mensal do consumo de água tratada, se reutilizando a água reservada para fins específicos. As cisternas
-            possuem diversos formatos e tamanhos e podem estar sendo instaladas em casas, apartamentos e condomínios.
 
-        </MessageText><br />
-        <MessageText>
-            O funcionamento ocorre da seguinte forma: a água é levada através das calhas até um filtro, o filtro é responsável 
-            por limpar as impurezas (folhas e galhos) e um freio d'água garante que a entrada da água não agite o restante no 
-            reservatório e levante partículas sólidas que estejam depositadas no fundo. Uma observação importante, se dá em razão de 
-            a água não ser potável, ou seja, não serve para o consumo humano. Porém, pode ser utilizada para lavar calçadas, 
-            carros, roupas e até na caixa sanitária, basta garantir uma instalação segura para evitar estar bebendo de uma água
-            que pode conter demasiada acidez, poeira, fuligem, sulfato, amônio e nitrato. As cisternas podem estar sendo enterradas,
-            principalmente, se forem de maior porte, evitando assim a luz solar e protegendo a proliferação de algas ou outros organismos.
-            Enfim, é fundamental a existência de filtros, caso contrário existem mais riscos de contaminações.   
-        </MessageText><br />
-    
+    <MessageTextAligned>
+      <TittleTopic>O que é uma Cisterna</TittleTopic>
+      <MessageText>
+          A cisterna é um tipo de sistema que capta a água através das calhas de chuva e reserva para fins domésticos,
+          de outra forma, um reservatório de água da chuva com baixo custo que serve para reuso. Atualmente, o uso destes 
+          sistemas tem ganhado espaço, justamente por ser uma alternativa eficaz ao considerar a obrigatoriedade da caixa
+          d'água em novas instalações (imóveis novos), uma cisterna garante de além de o reservatório a possibilidade de baixar
+          o custo mensal do consumo de água tratada, se reutilizando a água reservada para fins específicos. As cisternas
+          possuem diversos formatos e tamanhos e podem estar sendo instaladas em casas, apartamentos e condomínios.
+      </MessageText><br />
+      <MessageText>
+        O funcionamento ocorre da seguinte forma: a água é levada através das calhas até um filtro, o filtro é responsável 
+        por limpar as impurezas (folhas e galhos) e um freio d'água garante que a entrada da água não agite o restante no 
+        reservatório e levante partículas sólidas que estejam depositadas no fundo. Uma observação importante, se dá em razão de 
+        a água não ser potável, ou seja, não serve para o consumo humano. Porém, pode ser utilizada para lavar calçadas, 
+        carros, roupas e até na caixa sanitária, basta garantir uma instalação segura para evitar estar bebendo de uma água
+        que pode conter demasiada acidez, poeira, fuligem, sulfato, amônio e nitrato. As cisternas podem estar sendo enterradas,
+        principalmente, se forem de maior porte, evitando assim a luz solar e protegendo a proliferação de algas ou outros organismos.
+        Enfim, é fundamental a existência de filtros, caso contrário existem mais riscos de contaminações.   
+      </MessageText><br />
     </MessageTextAligned>
+
     <Wrapper>
-        <Topics>
-          <TittleTopic>Vantagens</TittleTopic>
-          <MessageText> 
-            <ul>
-                <li>É ecologicamente correto, visa o aproveitamento da água da chuva ao invés de um recurso híbrido potável.</li>
-                <li>Fácil instalação, podendo ser incluída em diferentes construções.</li>
-                <li>Economia significante na conta de água, podendo reduzir o gasto em até 50%.</li>
-                <li>Diversas dimensões de reservatório, podendo inclusive ser uma minicisterna para caber em cozinhas, 
-                    ou áreas de serviço. Uma variação de 80 até 15000 litros.</li>
-                <li>Ajuda na redução de enchentes, considerando que parte do que estará armazenado, iria para rios ou lagos.</li>
-                <li>Auxilia em crises hídricas, até em áreas de difícil acesso no sertão nordestino, justamente para combater
-                    as secas.</li>
-                <li>Cultura de sustentabilidade em novas edificações.</li>
-            </ul>
-          </MessageText>
-        </Topics>
-        <Topics>
-          <TittleTopic>Desvantagens</TittleTopic>
-          <MessageText>
-            <ul>
-                <li>Manutenções frequentes: em razão da possível contaminação através dejetos de animais ou animais mortos.</li>
-                <li>O interior do reservatório também deve ser limpado com certa frequência.</li>
-                <li>Em caso de instalação com a rede de encanamentos, deve ser feita com certo cuidado e por profissionais,
-                    evitando qualquer problema futuro. (obs: a água da chuva não é potável e não pode ser ingerida por seres 
-                    humanos.)</li>
-                <li>Cisternas de plástico podem se deformar com o tempo, indica-se cisternas com filtro anti-UV ou de alvenaria.</li>
-                <li>Custos mais altos para cisternas enterradas ou subterrâneas.</li>
-            </ul>
-          </MessageText>
-        </Topics>
-      </Wrapper>
-    <div>
-        <TittleTopic>Cuidados extras</TittleTopic>
-        <MessageText>  
-            <ul >
-                <li className="list-group-item-dark" style={{color: 'white', backgroundColor:'#211F20'}}>
-                    Busque evitar a coleta das primeiras chuvas após a instalação, ou escolha a instalação da calha primeiro, garantindo
-                    que esta tenha passado por algumas chuvas,e logo em seguida, faça a instalação da cisterna, de outra forma,
-                    acople um dispositivo para desviar as primeiras águas. Enfim, previna a cisterna das
-                    sujeiras do telhado.
-                </li>
-                <li className="list-group-item-dark" style={{color: 'white', backgroundColor:'#211F20'}}>
-                    Também considera-se fundamental que o reservatório esteja vedado, longe do alcance do sol ou detrimentos animais, 
-                    impedindo proliferação de algas.
-                </li>
-            </ul>
+
+      <Topics>
+        <TittleTopic>Vantagens</TittleTopic>
+        <MessageText> 
+          <ul>
+            <li>É ecologicamente correto, visa o aproveitamento da água da chuva ao invés de um recurso híbrido potável.</li>
+            <li>Fácil instalação, podendo ser incluída em diferentes construções.</li>
+            <li>Economia significante na conta de água, podendo reduzir o gasto em até 50%.</li>
+            <li>Diversas dimensões de reservatório, podendo inclusive ser uma minicisterna para caber em cozinhas, 
+                ou áreas de serviço. Uma variação de 80 até 15000 litros.</li>
+            <li>Ajuda na redução de enchentes, considerando que parte do que estará armazenado, iria para rios ou lagos.</li>
+            <li>Auxilia em crises hídricas, até em áreas de difícil acesso no sertão nordestino, justamente para combater
+                as secas.</li>
+            <li>Cultura de sustentabilidade em novas edificações.</li>
+          </ul>
         </MessageText>
+      </Topics>
+
+      <Topics>
+        <TittleTopic>Desvantagens</TittleTopic>
+        <MessageText>
+          <ul>
+            <li>Manutenções frequentes: em razão da possível contaminação através dejetos de animais ou animais mortos.</li>
+            <li>O interior do reservatório também deve ser limpado com certa frequência.</li>
+            <li>Em caso de instalação com a rede de encanamentos, deve ser feita com certo cuidado e por profissionais,
+            evitando qualquer problema futuro. (obs: a água da chuva não é potável e não pode ser ingerida por seres 
+            humanos.)
+            </li>
+            <li>Cisternas de plástico podem se deformar com o tempo, indica-se cisternas com filtro anti-UV ou de alvenaria.</li>
+            <li>Custos mais altos para cisternas enterradas ou subterrâneas.</li>
+          </ul>
+        </MessageText>
+      </Topics>
+
+    </Wrapper>
+    <div>
+      <TittleTopic>Cuidados extras</TittleTopic>
+      <MessageText>  
+        <ul >
+          <li className="list-group-item-dark" style={{color: 'white', backgroundColor:'#211F20'}}>
+            Busque evitar a coleta das primeiras chuvas após a instalação, ou escolha a instalação da calha primeiro, garantindo
+            que esta tenha passado por algumas chuvas,e logo em seguida, faça a instalação da cisterna, de outra forma,
+            acople um dispositivo para desviar as primeiras águas. Enfim, previna a cisterna das
+            sujeiras do telhado.
+          </li>
+          <li className="list-group-item-dark" style={{color: 'white', backgroundColor:'#211F20'}}>
+            Também considera-se fundamental que o reservatório esteja vedado, longe do alcance do sol ou detrimentos animais, 
+            impedindo proliferação de algas.
+          </li>
+        </ul>
+      </MessageText>
     </div>
-  
   </Container>)
   
 const Others = () => {
