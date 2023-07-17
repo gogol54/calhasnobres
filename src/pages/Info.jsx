@@ -171,7 +171,7 @@ const content = (
 
       <Wrapper>
         <ImageBox 
-          src='https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/piazadacroped.jpeg?alt=media&token=c03f494f-2ed5-40ce-91d5-6ad7fcebae7f'
+          src='https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/calhaslocals.jpeg?alt=media&token=a993949a-238b-4f35-bafc-e22298480b7b'
         />
         <Post>
           <TittleTopic>
