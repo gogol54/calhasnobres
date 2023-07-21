@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 import Footer from '../components/Footer'
@@ -129,6 +129,7 @@ const Avatar = styled.img`
   margin-right: 10px;
   width: 150px;
   height: 150px;
+  cursor: pointer;
 `
 const SpanClass = styled.span`
   font-weight: bold;
@@ -148,79 +149,84 @@ const MapBox = styled.div`
     width: 90%;
   }
 `
-const content = (
-  <Container className='container container-fluid'>
-    <Title> Calhas nobres, corte dobra e instalação de calhas e algerosas </Title>
-    <SubTitle>Buscando soluções com inovação, conforto e qualidade </SubTitle>
-    <div>
-      <Wrapper>
-        <Topics>
-          <TittleTopic>Inovação e conforto</TittleTopic>
-          <MessageText>
-            Considerando as distintas arquiteturas atuais no mercado, a Calhas Nobres Chapecó percebeu a necessidade
-            de inovar no mercado da funelaria. Diante disso, incluiu no catálogo diversas opções de acabamentos, entregando 
-            um produto funcional e seguro para seus clientes, com toques requintados que garantem o diferencial entre as 
-            demais empresas.
-          </MessageText>
-        </Topics>
-        <Topics>
-          <TittleTopic>Qualidade</TittleTopic>
-          <MessageText>Quando colocamos qualidade como um fator essencial no nosso produto, é em razão da busca do melhor material possível para nossos clientes. Sabendo que assim, reduz a chance de uma manutenção antes de um prazo comum ou até mesmo sem tal necessidade. </MessageText>
-        </Topics>
-      </Wrapper>
-
-      <Wrapper>
-        <ImageBox 
-          src='https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/calhaslocals.jpeg?alt=media&token=a993949a-238b-4f35-bafc-e22298480b7b'
-        />
-        <Post>
-          <TittleTopic>
-            <MessageText >
-              Idealizado pelos fundadores Elton Regis da Silva Medeiro e Michael Machado, a empresa Calhas Nobres, 
-              em seu ascendente primeiro ano, garante um serviço com foco na excelência, onde deve ser levado em 
-              consideração os mais de 10 anos de experiência dos funileiros, que buscam a entrega dos diversos produtos 
-              elaborados para atender aos clientes mais exigentes do oeste catarinense. Os projetos elaborados consistem
-              no corte, dobra e montagem de estruras metálicas, limpeza e troca de telhados, além de garantir a 
-              manutenção das instalações buscando a segurança dos nossos clientes.
-            </MessageText>
-            <MiniBox>
-              <Avatar 
-                src='https://cdn.icon-icons.com/icons2/1736/PNG/512/4043260-avatar-male-man-portrait_113269.png'
-                alt='icon founder'
-              />
-              <SpanClass> Elton Regis</SpanClass>
-              <Avatar 
-                src='https://cdn.icon-icons.com/icons2/1736/PNG/512/4043260-avatar-male-man-portrait_113269.png'
-                alt='icon founder'
-              />
-              <SpanClass> Michael Machado</SpanClass>
-            </MiniBox>
-          </TittleTopic>
-        </Post>
-      </Wrapper>
-    </div>
-    <MapBox>
-      <iframe 
-        width="100%" 
-        height="400" 
-        frameborder="0" 
-        scrolling="no" 
-        marginheight="0" 
-        marginwidth="0" 
-        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=R.%20das%20Bromelias,%20331%20E.%20Chapec%C3%B3,%20SC%20-%20Brasil.+(Calhas%20Nobres)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-        <a href="https://www.maps.ie/distance-area-calculator.html">
-          measure distance on map
-        </a>
-      </iframe>
-    </MapBox>
-  </Container>)
 
 const Info = () => {
+  const [pressed, setPressed] = useState(false) 
+  let [identify, setIdentify] = useState(null)
+  const handleClick = (value) => {
+    setPressed(true)
+    setIdentify(value)
+  }
+
   return (
   <div style={{backgroundColor: '#211F20'}}>
     <Navbar /> 
     <Sidebar />
-    {content}
+      <Container className='container container-fluid'>
+        <Title> Calhas nobres, corte dobra e instalação de calhas e algerosas </Title>
+        <SubTitle>Buscando soluções com inovação, conforto e qualidade </SubTitle>
+        <div>
+          <Wrapper>
+            <Topics>
+              <TittleTopic>Inovação e conforto</TittleTopic>
+              <MessageText>
+              Considerando as distintas arquiteturas atuais no mercado, a Calhas Nobres Chapecó percebeu a necessidade
+              de inovar no mercado da funelaria. Diante disso, incluiu no catálogo diversas opções de acabamentos, entregando 
+              um produto funcional e seguro para seus clientes, com toques requintados que garantem o diferencial entre as 
+              demais empresas.
+              </MessageText>
+            </Topics>
+          <Topics>
+          <TittleTopic>Qualidade</TittleTopic>
+            <MessageText>Quando colocamos qualidade como um fator essencial no nosso produto, é em razão da busca do melhor material possível para nossos clientes. Sabendo que assim, reduz a chance de uma manutenção antes de um prazo comum ou até mesmo sem tal necessidade. </MessageText>
+          </Topics>
+        </Wrapper>
+        <Wrapper>
+          <ImageBox 
+            src='https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/calhasnowimageinfo.jpeg?alt=media&token=5bc263bd-01c8-4957-84cd-461f582b862a'
+          />
+          <Post>
+            <TittleTopic>
+              <MessageText >
+                Idealizado pelos fundadores Elton Regis da Silva Medeiro e Michael Machado, a empresa Calhas Nobres, 
+                em seu ascendente primeiro ano, garante um serviço com foco na excelência, onde deve ser levado em 
+                consideração os mais de 10 anos de experiência dos funileiros, que buscam a entrega dos diversos produtos 
+                elaborados para atender aos clientes mais exigentes do oeste catarinense. Os projetos elaborados consistem
+                no corte, dobra e montagem de estruras metálicas, limpeza e troca de telhados, além de garantir a 
+                manutenção das instalações buscando a segurança dos nossos clientes.
+              </MessageText>
+              
+              <MiniBox>
+                <Avatar onClick={() => handleClick(1)}
+                  src='https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/pussuca.jpeg?alt=media&token=37fcb0ff-e067-46b5-9f66-c74f59ba71f6'
+                  alt='icon founder'
+                />
+                <SpanClass> Elton Regis</SpanClass>
+                <Avatar onClick={()  => handleClick(2)}
+                  src='https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/mixa.jpeg?alt=media&token=871dc7a4-809c-4aba-9c23-be960704b35d'
+                  alt='icon founder'
+                />
+                <SpanClass> Michael Machado</SpanClass>
+              </MiniBox>
+            </TittleTopic>
+          </Post>
+        </Wrapper>
+      </div>
+      <MapBox>
+        <iframe 
+          width="100%" 
+          height="400" 
+          frameborder="0" 
+          scrolling="no" 
+          marginheight="0" 
+          marginwidth="0" 
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=R.%20das%20Bromelias,%20331%20E.%20Chapec%C3%B3,%20SC%20-%20Brasil.+(Calhas%20Nobres)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+          <a href="https://www.maps.ie/distance-area-calculator.html">
+            measure distance on map
+          </a>
+        </iframe>
+      </MapBox>
+    </Container>
     <Footer />
   </div>
   )
