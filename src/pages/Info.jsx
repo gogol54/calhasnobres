@@ -212,18 +212,16 @@ const Info = () => {
           </Post>
         </Wrapper>
       </div>
-      <MapBox>
+      <MapBox>      
         <iframe 
           width="100%" 
           height="400" 
+          class="gmap_iframe" 
           frameborder="0" 
           scrolling="no" 
           marginheight="0" 
           marginwidth="0" 
-          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=R.%20das%20Bromelias,%20331%20E.%20Chapec%C3%B3,%20SC%20-%20Brasil.+(Calhas%20Nobres)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-          <a href="https://www.maps.ie/distance-area-calculator.html">
-            measure distance on map
-          </a>
+          src="https://maps.google.com/maps?width=771&amp;height=400&amp;hl=en&amp;q=R. Das Margaridas, 725 - Paraíso, Chapecó - SC, 89806-257&amp;t=p&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
         </iframe>
       </MapBox>
     </Container>

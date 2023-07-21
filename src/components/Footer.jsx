@@ -123,7 +123,7 @@ const Footer = () => {
                           
             </h6>
             <ContactItem>
-              <p><Room style={{marginRight:"10px", color:"gray"}}/> R. Amaro Souto, 331 E. Chapecó, SC - Brasil.</p>
+              <p><Room style={{marginRight:"10px", color:"gray"}}/> R. Das Margaridas, 725 - Paraíso, Chapecó - SC, 89806-257.</p>
             </ContactItem>
           
             </div>

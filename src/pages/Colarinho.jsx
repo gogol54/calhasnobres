@@ -87,12 +87,12 @@ const content = (
     <hr style={{border: '1px solid aquamarine'}}/>
     <Topics>
       <MessageText>
-      Pode ser definico como sendo o acabamento utilizado no encontro entre o telhado e a chaminé de uma churrasqueira. 
+      Pode ser definido como sendo o acabamento utilizado no encontro entre o telhado e a chaminé de uma churrasqueira. 
       O colarinho é uma peça que tem a função de fazer o acabamento estético e garantir a vedação adequada nessa área.
       </MessageText>
     </Topics>
     <Wrapper>
-      <Topics>
+      <Topics>  
         <TittleTopic>Recomendações</TittleTopic>
         <MessageText>
         O colarinho é colocado em torno da chaminé para proteger a passagem de água/infiltração do telhado e  

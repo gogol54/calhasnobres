@@ -26,6 +26,11 @@ const Container = styled.div`
     max-width: 85%;
     height: auto;
   }
+  @media (max-width: 370px) and (min-width: 200px)  {
+    width: 80%;
+    max-width: 80%;
+    height: auto;
+  }
 `
 const Image = styled.img`
   max-width: 100%;
@@ -53,6 +58,14 @@ const Title = styled.h2`
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 300;
   } 
+  @media (max-width: 370px) and (min-width: 200px)  {
+    margin: '10px';
+    font-size: 18px;
+    margin-left: 40px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 300;
+  }
+
 `
 const Tag = styled.span`
   font-size: 24px;
@@ -84,6 +97,14 @@ const MessageInner = styled.span`
     font-weight: 300;
     font-size: 18px;
   }
+  @media (max-width: 370px) and (min-width: 200px)  {
+    left: 14px;
+    margin-top: -170px;
+    width: 100%;
+    margin-left: 40px;
+    font-weight: 300;
+    font-size: 15px;
+  }
 `
 const Wrapper = styled.div`
   display: flex;
@@ -107,12 +128,23 @@ const TittleTopic = styled.h3`
   @media (max-width: 540px) {
     text-align: center;
   }
+  @media (max-width: 370px) and (min-width: 200px)  {
+    font-size: 20px;
+    font-weight: 300;
+    color: aquamarine;
+  }
 `
 const MessageText = styled.span`
   font-size: 18px;
   margin: 20px;
   font-weight: 300;
   max-width: 100%;
+  @media (max-width: 370px) and (min-width: 200px)  {
+    margin: 0px;
+    font-size:14px;
+    font-weight: 300;
+    max-width: 100%;
+  }
 `
 
 const MessageTextAligned = styled.div`
@@ -123,6 +155,7 @@ const MessageTextAligned = styled.div`
     font-size: 25px;
     color: white;
   }
+  
 `
 const content = (
   <Container>
