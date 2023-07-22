@@ -3,7 +3,8 @@ import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 import Footer from '../components/Footer'
 import styled from 'styled-components'
-
+import ModalImage from 'react-modal-image'
+import '../components/styles/avatar.css'
 const Container = styled.div`
   margin: 20px;
   background-color: #211F20;
@@ -151,12 +152,6 @@ const MapBox = styled.div`
 `
 
 const Info = () => {
-  const [pressed, setPressed] = useState(false) 
-  let [identify, setIdentify] = useState(null)
-  const handleClick = (value) => {
-    setPressed(true)
-    setIdentify(value)
-  }
 
   return (
   <div style={{backgroundColor: '#211F20'}}>
@@ -197,14 +192,19 @@ const Info = () => {
               </MessageText>
               
               <MiniBox>
-                <Avatar onClick={() => handleClick(1)}
-                  src='https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/pussuca.jpeg?alt=media&token=37fcb0ff-e067-46b5-9f66-c74f59ba71f6'
-                  alt='icon founder'
+                <ModalImage 
+                  small='https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/pussuca.jpeg?alt=media&token=37fcb0ff-e067-46b5-9f66-c74f59ba71f6'
+                  large='https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/pussuca.jpeg?alt=media&token=37fcb0ff-e067-46b5-9f66-c74f59ba71f6'
+                  alt='Fundador Elton'
+                  className='imageavatar'
                 />
                 <SpanClass> Elton Regis</SpanClass>
-                <Avatar onClick={()  => handleClick(2)}
-                  src='https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/mixa.jpeg?alt=media&token=871dc7a4-809c-4aba-9c23-be960704b35d'
-                  alt='icon founder'
+                <ModalImage
+                  small='https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/mixa.jpeg?alt=media&token=871dc7a4-809c-4aba-9c23-be960704b35d'
+                  large='https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-82750.appspot.com/o/mixa.jpeg?alt=media&token=871dc7a4-809c-4aba-9c23-be960704b35d'
+                  alt='Fundador Michael'
+                  className='imageavatar'
+
                 />
                 <SpanClass> Michael Machado</SpanClass>
               </MiniBox>
