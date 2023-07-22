@@ -40,13 +40,11 @@ const Container = styled.div`
 `
 const Title = styled.h2`
   margin: '10px';
-  margin-left: 40px;
   font-family: 'Red Hat Display', sans-serif;
   font-weight: 300;
   @media (max-width: 540px) {
     margin: '10px';
     font-size: 24px;
-    margin-left: 40px;
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 300;
   } 
